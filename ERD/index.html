@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Pizza</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/pictures/logo-icon.jpg"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-top"
+          />
+          Super Pizza
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Pizza</h1>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pizza/super-cheesy.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Cheesy</h5>
+              <p class="card-text">
+                Keju Mozzarella (String & Shredded) dan Keju Parmesan, Saus
+                Original Signature dan saus Mayonnaise
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 50.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pizza/super-meaty.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Meaty</h5>
+              <p class="card-text">
+                Sosis Sapi, Daging Sapi Cincang, Burger Sapi, Sosis Ayam, dan
+                Keju Mozzarella
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 50.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pizza/super-pepperoni.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Pepperoni</h5>
+              <p class="card-text">Pepperoni Sapi dan Keju Mozzarella</p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 50.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pizza/super-tuna-melty.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Tuna Melty</h5>
+              <p class="card-text">
+                Tuna, Jagung, Onion, Saus Mayonnaise, dan Keju Mozzarella
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 50.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pizza/super-veggie-garden.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Veggie Garden</h5>
+              <p class="card-text">
+                Jagung, Jamur, Paprika Merah, Paprika Hijau, Nanas, dan Keju
+                Mozzarella
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 50.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Pasta</h1>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pasta/super-aglio-olio.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Aglio Olio</h5>
+              <p class="card-text">
+                Pasta Spaghetti, Cabai, Paprika Hijau, Bawang Putih dengan
+                Salmon Panggang
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 35.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pasta/super-arrabbiata.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Arrabbiata</h5>
+              <p class="card-text">
+                Pasta Penne, Meatball Sapi, dan Saus Arrabbiata.
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 35.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pasta/super-cheesy-fusilli.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Cheesy Fusilli</h5>
+              <p class="card-text">
+                Pasta Fusilli Panggang, Saus Keju Cheddar, dan Beef Bits
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 35.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pasta/super-creamy-truffle.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Creamy Truffle</h5>
+              <p class="card-text">
+                Pasta Penne, Sosis Beef Chorizo, Bayam, Saus Alfredo, dan
+                Truffle Oil
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 35.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/pasta/superlasagna.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Lasagna</h5>
+              <p class="card-text">
+                Lasagna, Daging Sapi Cincang, dan Saus Krim Putih
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 35.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Appetizer</h1>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/appetizer/super-chicken-bites.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Chicken Bites</h5>
+              <p class="card-text">Daging ayam tanpa tulang berbalut tepung</p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 25.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/appetizer/super-chicken-wing.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Chicken Wing</h5>
+              <p class="card-text">
+                Sayap Ayam Panggang dengan Bumbu khas New Orleans
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 25.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/appetizer/super-cream-soup.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Cream Soup</h5>
+              <p class="card-text">Sup Krim Jamur dan Puff Pastry</p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 25.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/appetizer/super-garlic-bread.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Garlic Bread</h5>
+              <p class="card-text">
+                Daging Sapi Asap, Jagung, Onion dan Saus Thousand Island
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 25.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/appetizer/super-salad.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Salad</h5>
+              <p class="card-text">
+                Pilihan Sayuran dan Buah-Buahan Segar beserta Saus Pilihan
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 25.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Drink</h1>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/drink/blue-ocean.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blue Ocean</h5>
+              <p class="card-text">
+                Soda Bluberi, Sirup Mangga, dan Biji Selasih
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 15.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/drink/lychee-breeze.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lychee Breeze</h5>
+              <p class="card-text">
+                Buah Leci, Sirup Leci, Soda, dan Jeruk Nipis
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 15.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/drink/mixberry.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mix Berry</h5>
+              <p class="card-text">
+                Soda Bluberi, Sirup Stroberi, Biji Selasih, dan Jelly
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 15.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/drink/orange-lychee-sparkle.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Orange Lychee Sparkle</h5>
+              <p class="card-text">Jus Jeruk dan Sirup Leci</p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 15.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100" style="width: 18 rem; gap: 15px">
+            <img
+              src="/pictures/drink/tropical-punch.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tropical Punch</h5>
+              <p class="card-text">
+                Potongan Buah Peach, Nata de Coco, Semangka, Biji Selasih, Sirup
+                Mangga, dan Lemon Tea
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-body-secondary">Rp 15.000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
