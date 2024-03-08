@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-08T11:00:20.000Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="8slGUUSd9j6WV7ti4hAh" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-08T11:01:09.058Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="w47jtclwbsUecH1Fms-w" version="24.0.2" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="2912" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2171" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -169,7 +169,7 @@
         <mxCell id="57J9HGHEWiLVGIEVYI9T-230" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="57J9HGHEWiLVGIEVYI9T-223" vertex="1">
           <mxGeometry y="90" width="250" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="57J9HGHEWiLVGIEVYI9T-231" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="57J9HGHEWiLVGIEVYI9T-230" vertex="1">
+        <mxCell id="57J9HGHEWiLVGIEVYI9T-231" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="57J9HGHEWiLVGIEVYI9T-230" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -684,6 +684,12 @@
         <mxCell id="axUUv2KypCi063YYUATD-83" value="created_at" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="axUUv2KypCi063YYUATD-81">
           <mxGeometry x="30" width="220" height="30" as="geometry">
             <mxRectangle width="220" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="axUUv2KypCi063YYUATD-87" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="57J9HGHEWiLVGIEVYI9T-230" target="axUUv2KypCi063YYUATD-49">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-180" y="95" as="sourcePoint" />
+            <mxPoint x="-120" y="125" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
