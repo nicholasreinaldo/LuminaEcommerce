@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-11T14:47:03.975Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="lNmvVdC_aLruu7tV2EqN" version="24.0.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-11T14:48:37.208Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="-0ZdQNHX1jVmR0SGfLTd" version="24.0.4" type="github" pages="2">
   <diagram name="ERD" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="3454" dy="1036" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -716,7 +716,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0vIlzV6ax4ji2yt30US2" name="Customer Flow Chart">
-    <mxGraphModel dx="1102" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1562" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -764,7 +764,7 @@
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-19" value="Login as User" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="360" y="450" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="SpF6GZIDmAaOeA5q9CdE-26" value="Make a new product listing" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="SpF6GZIDmAaOeA5q9CdE-26" value="Edit Product Listing / Stock" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="1040" y="390" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SpF6GZIDmAaOeA5q9CdE-29" target="SpF6GZIDmAaOeA5q9CdE-73">
@@ -1013,11 +1013,17 @@
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-137" value="Notify customers there will be delays" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="910" y="485" width="100" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="SpF6GZIDmAaOeA5q9CdE-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SpF6GZIDmAaOeA5q9CdE-141" target="SpF6GZIDmAaOeA5q9CdE-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SpF6GZIDmAaOeA5q9CdE-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SpF6GZIDmAaOeA5q9CdE-141" target="SpF6GZIDmAaOeA5q9CdE-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-141" value="Order Items from Suppliers" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="910" y="600" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="SpF6GZIDmAaOeA5q9CdE-145" value="Edit Product Listing / Stock" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1225" y="390" width="100" height="50" as="geometry" />
+        <mxCell id="SpF6GZIDmAaOeA5q9CdE-145" value="Make a New Product Listing" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="390" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SpF6GZIDmAaOeA5q9CdE-147" target="SpF6GZIDmAaOeA5q9CdE-145">
           <mxGeometry relative="1" as="geometry" />
@@ -1029,14 +1035,19 @@
           <mxGeometry x="1040" y="245" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SpF6GZIDmAaOeA5q9CdE-145" target="SpF6GZIDmAaOeA5q9CdE-147">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="415" />
+              <mxPoint x="1300" y="295" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="SpF6GZIDmAaOeA5q9CdE-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SpF6GZIDmAaOeA5q9CdE-26" target="SpF6GZIDmAaOeA5q9CdE-147">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1090" y="460" />
-              <mxPoint x="1370" y="460" />
-              <mxPoint x="1370" y="295" />
+              <mxPoint x="1320" y="460" />
+              <mxPoint x="1320" y="295" />
             </Array>
           </mxGeometry>
         </mxCell>
