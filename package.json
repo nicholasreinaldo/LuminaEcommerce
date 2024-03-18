@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "dev": "tailwindcss build -i ./src/styles/tailwind.css -o ./public/styles/tailwind.css",
+    "dev": "tailwindcss build -i ./client/src/styles/tailwind.css -o ./client/public/styles/tailwind.css",
     "build": "NODE_ENV=production npm run dev"
   },
   "keywords": [],
