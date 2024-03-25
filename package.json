@@ -8,9 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "dev": "tailwindcss build -i ./client/src/styles/input.css -o ./client/public/output.css",
-    "build": "NODE_ENV=production npm run dev"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +20,6 @@
     "pg": "^8.11.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.18",
-    "postcss": "^8.4.36",
-    "tailwindcss": "^3.4.1"
+    "autoprefixer": "^10.4.18"
   }
 }
