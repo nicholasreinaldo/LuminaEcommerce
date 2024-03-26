@@ -10,7 +10,7 @@
 }
 
 header {
-  height: 80px;
+  height: 100px;
   width: 100%;
   background-color: grey;
   display: flex;
@@ -21,10 +21,30 @@ header {
   border-bottom: 2px solid grey;
 }
 
+.nav-container {
+  margin: auto;
+}
+
 .nav-level {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-button {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
 }
