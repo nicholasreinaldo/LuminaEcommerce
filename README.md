@@ -2,5 +2,6 @@
 
 Self to-do Notes: \*Ignore this
 
-- [ ] Design HTML & CSS Home Page
+- [ ] Design Home Page
 - [ ] Design All Product Page
+- [ ] Design About Us Page
