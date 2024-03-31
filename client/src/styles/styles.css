@@ -5,14 +5,15 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: tahoma;
   color: var(--text-color);
 }
 
 header {
-  height: 100px;
+  height: 50px;
   width: 100%;
-  background-color: grey;
+  background-color: white;
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -23,15 +24,28 @@ header {
 
 .nav-container {
   margin: auto;
+  width: 100%;
 }
 
 .nav-level {
   margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.nav-left,
+.nav-middle,
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 40px;
+  font-family: 'Brush Script MT';
 }
 
 ul {
@@ -44,7 +58,6 @@ ul {
 
 .nav-button {
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 16px;
 }
