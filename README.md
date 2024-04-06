@@ -1,6 +1,6 @@
 ﻿# 24001107-44-Nir-Lumina-ChallengeGold
 
-Self to-do Notes: \*Ignore this
+Self to-do Notes: 
 
 - [ ] Design Home Page
 - [ ] Design All Product Page
