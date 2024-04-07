@@ -1,5 +1,8 @@
 :root {
-  --text-color: black;
+  --text-color: #432e34;
+  --main-pink: #f9dff2;
+  --warm-pink: #e299c4;
+  --white-shade: #d5dbea;
 }
 
 * {
@@ -29,18 +32,26 @@ header {
 
 .nav-level {
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
   width: 90%;
 }
 
-.nav-left,
-.nav-middle,
-.nav-right {
+.nav-middle {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo-name {
@@ -60,4 +71,28 @@ ul {
   display: inline-block;
   text-align: center;
   padding: 16px;
+}
+
+.all-products {
+  padding-top: 80px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 24px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  height: 5px;
+  width: 90px;
+  background: var(--warm-pink);
+}
+
+.about-us {
+  padding-top: 80px;
 }
