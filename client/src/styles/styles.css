@@ -96,3 +96,41 @@ ul {
 .about-us {
   padding-top: 80px;
 }
+
+/** Product card section**/
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* Basic styling for product cards */
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  width: calc(20% - 20px); /* 4 cards per row */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  font-weight: bold;
+  color: #d782ae;
+}
+
+.add-to-cart {
+  background-color: #d782ae;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
