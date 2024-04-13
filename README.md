@@ -7,3 +7,4 @@ Self to-do Notes:
 - [ ] Design About Us Page
 - [ ] Design My Cart Page
 - [ ] Design Check Out Page
+- [ ] Integrate with Database
