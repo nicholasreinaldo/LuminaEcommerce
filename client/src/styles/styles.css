@@ -137,11 +137,11 @@ ul {
 
 .price {
   font-weight: bold;
-  color: #d782ae;
+  color: var(--warm-pink);
 }
 
 .add-to-cart {
-  background-color: #d782ae;
+  background-color: var(--warm-pink);
   color: white;
   border: none;
   padding: 5px 10px;
@@ -167,27 +167,39 @@ ul {
 }
 
 .social-media-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
   background-color: #fff;
   border-top: 2px solid lightgray;
   border-bottom: 2px solid lightgray;
 }
 
-.logo-text h1,
-.logo-text p {
-  margin: 0;
-  color: #000;
+.social-media-level {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 90%;
 }
 
-.icons a {
-  margin: 0 10px;
+.social-media-left {
+  display: flex;
+  align-items: center;
+}
+
+.tag-line {
+  padding-left: 100px;
+}
+
+.social-media-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-right a {
+  margin: 0 20px;
   color: #000;
   text-decoration: none;
 }
 
-.icons i {
+.social-media-right i {
   font-size: 24px;
 }
