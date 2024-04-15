@@ -23,6 +23,11 @@ header {
   align-items: center;
   top: 0px;
   border-bottom: 2px solid lightgray;
+  z-index: 1;
+}
+
+body {
+  position: relative;
 }
 
 .nav-container {
@@ -95,7 +100,7 @@ ul {
 
 .about-us {
   padding-top: 80px;
-  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /** Product card section**/
@@ -118,6 +123,13 @@ ul {
   width: calc(20% - 20px); /* 4 cards per row */
 }
 
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
 .product-card img {
   max-width: 100%;
   height: auto;
@@ -134,4 +146,48 @@ ul {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.page-button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social-media-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.logo-text h1,
+.logo-text p {
+  margin: 0;
+  color: #000;
+}
+
+.icons a {
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.icons i {
+  font-size: 24px;
 }
