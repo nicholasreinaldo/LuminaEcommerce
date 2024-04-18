@@ -9,3 +9,4 @@ Self to-do Notes:
 - [ ] Design Check Out Page
 - [ ] Integrate with Database
 - [ ] Integrate with Database
+- [ ] Interactive Pages
