@@ -30,6 +30,11 @@ body {
   position: relative;
 }
 
+.main-banner {
+  margin: auto;
+  width: 50%;
+}
+
 .nav-container {
   margin: auto;
   width: 100%;
