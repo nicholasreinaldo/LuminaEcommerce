@@ -31,11 +31,13 @@ body {
 }
 
 .main-banner {
+  padding-top: 90px;
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .main-banner-picture {
+  width: 90%;
 }
 
 .nav-container {
@@ -87,7 +89,7 @@ ul {
 }
 
 .all-products {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .section-title {
