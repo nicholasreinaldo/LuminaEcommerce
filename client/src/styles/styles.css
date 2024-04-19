@@ -32,12 +32,13 @@ body {
 
 .main-banner {
   padding-top: 90px;
-  margin: auto;
   width: 100%;
 }
 
 .main-banner-picture {
   width: 90%;
+  margin: auto;
+  display: block;
 }
 
 .nav-container {
@@ -89,7 +90,7 @@ ul {
 }
 
 .all-products {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .section-title {
@@ -109,7 +110,7 @@ ul {
 }
 
 .about-us {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 
