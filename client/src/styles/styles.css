@@ -41,25 +41,20 @@ header {
   width: 90%;
 }
 
-.nav-middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .nav-left {
   display: flex;
   justify-content: flex-start;
 }
 
-.nav-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .logo-name {
   font-size: 40px;
   font-family: 'Brush Script MT';
+}
+
+.nav-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-middle ul {
@@ -68,6 +63,11 @@ header {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-button {
@@ -81,6 +81,7 @@ body {
   position: relative;
 }
 
+/* Home Page Banner */
 .main-banner {
   padding-top: 90px;
   width: 100%;
@@ -92,6 +93,7 @@ body {
   display: block;
 }
 
+/* All Products */
 .all-products {
   padding-top: 40px;
 }
@@ -117,13 +119,13 @@ body {
   padding-bottom: 80px;
 }
 
-/** Product card section**/
+/* Product card section*/
 
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 50px;
 }
