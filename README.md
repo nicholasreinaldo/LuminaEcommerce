@@ -8,6 +8,6 @@ Lumina is an skin care products e-commerce website where customer could order th
 In summary, this project consists of 4 main pages with its respectives features.
 - Home Page (Main Banner, Product Listing, and About Us)
 - Login & Register Page (Login & Register Account)
-- Admin Page ()
+- Admin Page (Modify Products, Update Order Status)
 - Customer Page ()
 
