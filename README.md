@@ -10,4 +10,4 @@ In summary, this project consists of 4 main pages with its respectives features.
 - Login & Register Page (Login & Register Account)
 - Admin Page (Modify Products, Update Order Status)
 - Customer Page (See Order Status, Update profile)
-
+= 
