@@ -199,7 +199,8 @@ body {
 }
 
 .about-us-pic {
-  height: 200px;
+  max-height: 200px;
+  height: auto;
 }
 
 .about-explanation-left {
