@@ -189,6 +189,7 @@ body {
   display: grid;
   width: 90%;
   margin: auto;
+  row-gap: 15px;
 }
 
 .slogan {
