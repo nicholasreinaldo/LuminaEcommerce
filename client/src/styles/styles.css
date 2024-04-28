@@ -189,6 +189,7 @@ body {
   padding-top: 50px;
   display: grid;
   max-width: 1200px;
+  width: 90%;
   margin: auto;
   row-gap: 15px;
 }
@@ -204,8 +205,8 @@ body {
 }
 
 .about-us-pic {
-  height: auto;
-  width: 400px;
+  max-height: 300px;
+  width: auto;
 }
 
 .about-explanation-left {
