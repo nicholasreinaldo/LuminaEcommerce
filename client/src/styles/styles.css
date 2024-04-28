@@ -210,6 +210,7 @@ body {
   align-items: center;
 }
 
+
 .about-explanation-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
