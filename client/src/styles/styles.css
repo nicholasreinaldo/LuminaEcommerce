@@ -1,0 +1,63 @@
+:root {
+  --text-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: tahoma;
+  color: var(--text-color);
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  border-bottom: 2px solid lightgray;
+}
+
+.nav-container {
+  margin: auto;
+  width: 100%;
+}
+
+.nav-level {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.nav-left,
+.nav-middle,
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 40px;
+  font-family: 'Brush Script MT';
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+}
