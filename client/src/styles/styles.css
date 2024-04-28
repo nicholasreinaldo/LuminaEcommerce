@@ -184,6 +184,11 @@ body {
 
 /* About us section */
 
+.about-us-container {
+  padding-top: 50px;
+  display: grid;
+  height: 300px;
+}
 
 /* Footer section */
 .social-media-section {
