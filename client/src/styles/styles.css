@@ -193,6 +193,10 @@ body {
   row-gap: 15px;
 }
 
+.about-us-container p {
+  font-size: 20px;
+}
+
 .slogan {
   margin: auto;
   font-size: 30px;
