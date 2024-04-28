@@ -209,18 +209,21 @@ body {
   width: auto;
 }
 
+.about-us-pic-right {
+  max-height: 300px;
+  width: auto;
+}
+
 .about-explanation-left {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-
 .about-explanation-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-
 }
 
 /* Footer section */
