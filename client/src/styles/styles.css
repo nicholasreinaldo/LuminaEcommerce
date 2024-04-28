@@ -191,6 +191,12 @@ body {
   margin: auto;
 }
 
+.slogan {
+  margin: auto;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
 .about-us-pic {
   height: 200px;
 }
