@@ -187,7 +187,22 @@ body {
 .about-us-container {
   padding-top: 50px;
   display: grid;
-  height: 300px;
+  width: 90%;
+  margin: auto;
+}
+
+.about-us-pic {
+  height: 200px;
+}
+
+.about-explanation-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-explanation-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Footer section */
