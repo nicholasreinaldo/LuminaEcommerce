@@ -187,7 +187,7 @@ body {
 .about-us-container {
   padding-top: 50px;
   display: grid;
-  width: 90%;
+  max-width: 1200px;
   margin: auto;
   row-gap: 15px;
 }
@@ -200,7 +200,7 @@ body {
 
 .about-us-pic {
   max-height: 250px;
-  width: 30vw;
+  width: 400px;
 }
 
 .about-explanation-left {
