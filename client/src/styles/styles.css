@@ -209,10 +209,6 @@ body {
   width: auto;
 }
 
-.about-us-pic-right {
-  max-height: 300px;
-  width: auto;
-}
 
 .about-explanation-left {
   display: grid;
@@ -224,6 +220,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+.about-us-pic-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Footer section */
