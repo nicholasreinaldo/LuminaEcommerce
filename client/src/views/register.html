@@ -33,17 +33,34 @@
     </div>
   </header>
   <body>
-    <section class="banners">
-      <div class="main-banner">
-        <a href="https://www.google.com/">
-          <img
-            class="main-banner-picture"
-            src="/client/src/assets/banner-skintific.jpg"
-            alt="mainbanner"
-          />
-        </a>
+    <section class="login-register-container">
+      <div class="login-and-register">
+        <div class="login-container">
+          <p>Login</p>
+          <form class="login-form">
+            <label>E-mail Address <span class="required">*</span> </label>
+            <br />
+            <input type="text" class="text-input" name="email" id="email" />
+            <br />
+            <label>Password <span class="required">*</span></label>
+            <br />
+            <input
+              type="text"
+              class="text-input"
+              name="password"
+              id="password"
+            />
+            <br />
+            <button type="submit" name="login" value="Log in">Log in</button>
+          </form>
+        </div>
+        <div class="register-container">
+          <form class="register-form"></form>
+        </div>
       </div>
     </section>
+  </body>
+  <footer>
     <section class="social-media">
       <div class="social-media-section">
         <div class="social-media-level">
@@ -62,6 +79,5 @@
         </div>
       </div>
     </section>
-  </body>
-  <footer></footer>
+  </footer>
 </html>

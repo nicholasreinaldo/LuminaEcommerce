@@ -246,3 +246,9 @@ body {
 .social-media-right i {
   font-size: 24px;
 }
+
+/* Login and Register styling section */
+
+.login-register-container {
+  padding-top: 90px;
+}
