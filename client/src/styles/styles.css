@@ -267,6 +267,11 @@ body {
   margin: 0 20px;
 }
 
+.login-register-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .email-input,
 .password-input {
   width: 100%;
