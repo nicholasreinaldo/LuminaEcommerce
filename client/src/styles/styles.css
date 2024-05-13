@@ -274,5 +274,13 @@ body {
 
 .email-input,
 .password-input {
+  border: 1px solid gray;
+  border-radius: 0px;
+  padding: 0 15px;
+  height: 40px;
   width: 100%;
+}
+
+.required {
+  color: red;
 }
