@@ -264,9 +264,10 @@ body {
 .login-container,
 .register-container {
   flex: 1;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
-.text-input {
+.email-input,
+.password-input {
   width: 100%;
 }
