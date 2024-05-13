@@ -209,14 +209,6 @@ body {
 }
 
 /* Footer section */
-
-footer {
-  clear: both;
-  position: relative;
-  height: 200px;
-  margin-top: -200px;
-}
-
 .social-media-section {
   background-color: #fff;
   border-top: 2px solid lightgray;
