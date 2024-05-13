@@ -250,7 +250,7 @@ body {
 /* Login and Register styling section */
 
 .login-register-container {
-  padding: 120px 150px 158px 150px;
+  padding: 165px 150px 173px 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -286,7 +286,7 @@ body {
   padding: 0 15px;
   height: 40px;
   width: 85%;
-  margin: 20px 0px;
+  margin: 5px 0px;
 }
 
 .login-register-button {
