@@ -251,8 +251,8 @@ body {
 
 .login-register-container {
   padding-top: 120px;
+  display: flex;
 }
 
 .register-container {
-  display: flex;
 }
