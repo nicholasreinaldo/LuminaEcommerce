@@ -79,6 +79,8 @@ header {
 /* Body styling section */
 body {
   position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* Home Page Banner */
@@ -209,6 +211,12 @@ body {
 }
 
 /* Footer section */
+
+footer {
+  min-height: 50px;
+  background: PapayaWhip;
+}
+
 .social-media-section {
   background-color: #fff;
   border-top: 2px solid lightgray;
