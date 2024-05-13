@@ -79,10 +79,6 @@ header {
 /* Body styling section */
 body {
   position: relative;
-  min-height: 100vh;
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 /* Home Page Banner */
@@ -215,7 +211,10 @@ body {
 /* Footer section */
 
 footer {
-  min-height: 50px;
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
 }
 
 .social-media-section {
