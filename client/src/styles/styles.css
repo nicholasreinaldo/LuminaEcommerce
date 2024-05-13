@@ -291,6 +291,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .login-register-button:hover {
