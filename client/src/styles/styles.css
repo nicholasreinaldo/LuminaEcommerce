@@ -252,6 +252,7 @@ body {
 .login-register-container {
   padding-top: 120px;
   display: flex;
+  justify-content: center;
 }
 
 .register-container {
