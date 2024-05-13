@@ -250,7 +250,7 @@ body {
 /* Login and Register styling section */
 
 .login-register-container {
-  padding: 120px 200px 100px 200px;
+  padding: 120px 150px 100px 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -270,7 +270,7 @@ body {
 .login-register-title {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .email-input,
@@ -279,7 +279,7 @@ body {
   border-radius: 0px;
   padding: 0 15px;
   height: 40px;
-  width: 95%;
+  width: 85%;
   margin: 20px 0px;
 }
 
