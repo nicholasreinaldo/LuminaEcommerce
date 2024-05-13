@@ -250,10 +250,23 @@ body {
 /* Login and Register styling section */
 
 .login-register-container {
-  padding-top: 120px;
+  padding: 120px 200px 100px 200px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.login-register {
+.login-and-register {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login-container,
+.register-container {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.text-input {
+  width: 100%;
 }
