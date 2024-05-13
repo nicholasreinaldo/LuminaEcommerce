@@ -273,6 +273,12 @@ body {
   margin-bottom: 30px;
 }
 
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .email-input,
 .password-input {
   border: 1px solid gray;
