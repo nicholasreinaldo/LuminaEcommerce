@@ -165,24 +165,6 @@ body {
   cursor: pointer;
 }
 
-.pagination {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.page-navigation {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.page-button {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 /* About us section */
 
 .about-us-container {
@@ -208,7 +190,6 @@ body {
   max-height: 300px;
   width: auto;
 }
-
 
 .about-explanation-left {
   display: grid;
