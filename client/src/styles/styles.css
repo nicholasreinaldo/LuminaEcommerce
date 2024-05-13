@@ -283,6 +283,16 @@ body {
   margin: 20px 0px;
 }
 
+.login-register-button {
+  border: 2px solid gray;
+  padding: 0 34px;
+  background: #fff;
+  color: #222;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .required {
   color: red;
 }
