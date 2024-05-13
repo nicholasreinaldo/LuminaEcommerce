@@ -250,7 +250,7 @@ body {
 /* Login and Register styling section */
 
 .login-register-container {
-  padding: 120px 150px 100px 150px;
+  padding: 120px 150px 234px 150px;
   display: flex;
   justify-content: space-between;
 }
