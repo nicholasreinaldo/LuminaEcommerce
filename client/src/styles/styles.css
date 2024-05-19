@@ -312,8 +312,7 @@ body {
 
 /* Admin Page styling section */
 
-.login-register-container {
+.admin-menus {
   padding: 165px 150px 173px 150px;
   display: flex;
-  justify-content: space-between;
 }
