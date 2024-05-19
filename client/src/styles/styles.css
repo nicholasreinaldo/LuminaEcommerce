@@ -96,7 +96,7 @@ body {
 
 /* All Products */
 .all-products {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .section-title {
@@ -166,6 +166,10 @@ body {
 }
 
 /* About us section */
+
+.about-us {
+  padding-top: 80px;
+}
 
 .about-us-container {
   padding-top: 50px;
