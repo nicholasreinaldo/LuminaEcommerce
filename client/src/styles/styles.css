@@ -76,6 +76,10 @@ header {
   padding: 16px;
 }
 
+.nav-link {
+  text-decoration: initial;
+}
+
 /* Body styling section */
 body {
   position: relative;
