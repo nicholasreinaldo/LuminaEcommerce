@@ -317,6 +317,10 @@ body {
   display: flex;
 }
 
+.products-menu {
+  width: 100%;
+}
+
 .products-table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
