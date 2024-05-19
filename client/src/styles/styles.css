@@ -77,7 +77,7 @@ header {
 }
 
 .nav-link {
-  text-decoration: initial;
+  text-decoration: none;
 }
 
 /* Body styling section */
