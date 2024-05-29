@@ -12,6 +12,7 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'client')))
 app.set('views', path.join(__dirname, 'client/src/views'))
 
+/* Using all routers */
 app.use('/', indexRouter)
 app.use('/admin', adminRouter)
 app.use('/api', productsRouter)
