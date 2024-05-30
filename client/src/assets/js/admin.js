@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <td>${product.brand_name}</td>
             <td>${product.product_name}</td>
             <td>${product.stock_amount}</td>
-            <td>Rp ${product.product_price}</td>
+            <td>${product.product_price}</td>
             <td><img src="/src/assets/${product.product_image_url}" alt="${
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
