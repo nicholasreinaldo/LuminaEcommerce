@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td>
             <select data-id="${product.id}">
               <option value="true" ${
-                product.display ? 'selected' : ''
+                product.listing_status ? 'selected' : ''
               }>Yes</option>
               <option value="false" ${
-                !product.display ? 'selected' : ''
+                !product.listing_status ? 'selected' : ''
               }>No</option>
             </select>
           </td>
