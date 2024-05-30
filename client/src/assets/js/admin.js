@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       productRow.innerHTML = `
           <td>${product.brand_name}</td>
           <td>${product.product_name}</td>
-          <td>${product.stock}</td>
+          <td>${product.product_stock}</td>
           <td>Rp ${product.product_price}</td>
           <td>${product.product_description}</td>
           <td><img src="/assets/${product.product_image_url}" alt="${
