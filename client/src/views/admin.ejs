@@ -1,3 +1,4 @@
+<!-- client/src/views/admin.ejs -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <title>Lumina Indonesia</title>
+    <script src="/src/assets/js/admin.js"></script>
+    <title>Lumina Indonesia - Admin Dashboard</title>
   </head>
   <header>
     <div class="nav-container">
@@ -37,29 +39,21 @@
         <div class="edit-product">
           <p>Active Products Dashboard</p>
           <table class="products-table">
-            <tr>
-              <th>Brand</th>
-              <th>Name</th>
-              <th>Stock</th>
-              <th>Price</th>
-              <th>Image</th>
-              <th>Display</th>
-              <th>Edit Product</th>
-            </tr>
-            <tr>
-              <td>Brand</td>
-              <td>Name</td>
-              <td>Stock</td>
-              <td>Price</td>
-              <td>Image</td>
-              <td>
-                <select>
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
-              </td>
-              <td>Button</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Name</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Display</th>
+                <th>Edit Product</th>
+              </tr>
+            </thead>
+            <tbody class="product-table-body">
+              <!-- Product list -->
+            </tbody>
           </table>
         </div>
       </div>
