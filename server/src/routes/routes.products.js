@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const knex = require('../../../db')
+const adminController = require('../controllers/controller.admin')
 
 router.get('/products', async (req, res) => {
   try {
@@ -21,5 +22,8 @@ router.get('/admin/products', async (req, res) => {
     res.status(500).json({ message: 'Internal server error' })
   }
 })
+
+// New endpoint to add a product
+router.post('/admin/products', adminController.createProduct)
 
 module.exports = router
