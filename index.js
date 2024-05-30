@@ -4,9 +4,9 @@ const path = require('path')
 const port = process.env.PORT || 3000
 
 // Importing all routers from the routes folder
-const indexRouter = require('./server/src/routes/index')
-const adminRouter = require('./server/src/routes/admin')
-const productsRouter = require('./server/src/routes/products')
+const indexRouter = require('./server/src/routes/routes.index')
+const adminRouter = require('./server/src/routes/routes.admin')
+const productsRouter = require('./server/src/routes/routes.products')
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'client')))
