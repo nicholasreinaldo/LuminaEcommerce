@@ -14,18 +14,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         productRow.innerHTML = `
             <td>${product.brand_name}</td>
             <td>${product.product_name}</td>
-            <td>${product.stock}</td>
+            <td>${product.stock_amount}</td>
             <td>Rp ${product.product_price}</td>
-            <td><img src="/assets/${product.product_image_url}" alt="${
+            <td><img src="/src/assets/${product.product_image_url}" alt="${
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
             <td>
               <select data-id="${product.id}">
                 <option value="true" ${
-                  product.display ? 'selected' : ''
+                  product.listing_status ? 'selected' : ''
                 }>Yes</option>
                 <option value="false" ${
-                  !product.display ? 'selected' : ''
+                  !product.listing_status ? 'selected' : ''
                 }>No</option>
               </select>
             </td>
@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const productData = {
       brand_name: formData.get('brand_name'),
       product_name: formData.get('product_name'),
-      stock: formData.get('stock'),
+      stock_amount: formData.get('stock_amount'),
       product_price: formData.get('product_price'),
       product_image_url: formData.get('product_image_url'),
-      display: formData.get('display'),
+      listing_status: formData.get('listing_status') === 'true',
     }
 
     try {
