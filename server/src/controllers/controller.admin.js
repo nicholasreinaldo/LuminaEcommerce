@@ -38,3 +38,30 @@ exports.deleteProduct = async (req, res) => {
     res.status(500).json({ message: 'Internal server error' })
   }
 }
+
+exports.updateProduct = async (req, res) => {
+  const { id } = req.params
+  const {
+    brand_name,
+    product_name,
+    stock_amount,
+    product_price,
+    product_image_url,
+    listing_status,
+  } = req.body
+
+  try {
+    await knex('products').where({ id }).update({
+      brand_name,
+      product_name,
+      stock_amount,
+      product_price,
+      product_image_url,
+      listing_status,
+    })
+    res.status(200).json({ message: 'Product updated successfully' })
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({ message: 'Internal server error' })
+  }
+}

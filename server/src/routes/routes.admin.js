@@ -13,4 +13,7 @@ router.post('/products', adminController.createProduct)
 // Route to delete a product
 router.delete('/products/:id', adminController.deleteProduct)
 
+// Route to update a product
+router.put('/products/:id', adminController.updateProduct)
+
 module.exports = router

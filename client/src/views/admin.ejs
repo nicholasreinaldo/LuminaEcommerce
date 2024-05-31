@@ -9,31 +9,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script src="/src/views/js-script/admin.js"></script>
+    <script src="/src/views/js-script/admin.js" defer></script>
     <title>Lumina Indonesia - Admin Dashboard</title>
   </head>
-  <header>
-    <div class="nav-container">
-      <nav class="nav-level">
-        <div class="nav-left">
-          <a class="nav-link" href="/"><p class="logo-name">Lumina</p></a>
-        </div>
-        <div class="nav-middle">
-          <ul>
-            <li class="nav-button">Products</li>
-            <li class="nav-button">Orders</li>
-            <li class="nav-button">My Profile</li>
-          </ul>
-        </div>
-        <div class="nav-right">
-          <ul>
-            <li class="nav-button">Logout</li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
   <body>
+    <header>
+      <div class="nav-container">
+        <nav class="nav-level">
+          <div class="nav-left">
+            <a class="nav-link" href="/"><p class="logo-name">Lumina</p></a>
+          </div>
+          <div class="nav-middle">
+            <ul>
+              <li class="nav-button">Products</li>
+              <li class="nav-button">Orders</li>
+              <li class="nav-button">My Profile</li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <ul>
+              <li class="nav-button">Logout</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <section class="admin-menus">
       <div class="products-menu">
         <div class="edit-product">
@@ -102,25 +102,78 @@
       <div class="orders-menu"></div>
       <div class="admin-menu"></div>
     </section>
-  </body>
-  <footer>
-    <section class="social-media">
-      <div class="social-media-section">
-        <div class="social-media-level">
-          <div class="social-media-left">
-            <p class="logo-name">Lumina</p>
-            <p class="tag-line">
-              Your One-Stop Shop for Radiant Skin and Beauty
-            </p>
-          </div>
-          <div class="social-media-right">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    <!-- Edit Product Modal -->
+    <div id="editProductModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Product</h2>
+        <form id="edit-product-form">
+          <input type="hidden" id="edit_product_id" name="product_id" />
+          <label for="edit_brand_name">Brand:</label>
+          <input type="text" id="edit_brand_name" name="brand_name" required />
+          <br />
+          <label for="edit_product_name">Name:</label>
+          <input
+            type="text"
+            id="edit_product_name"
+            name="product_name"
+            required
+          />
+          <br />
+          <label for="edit_stock_amount">Stock:</label>
+          <input
+            type="number"
+            id="edit_stock_amount"
+            name="stock_amount"
+            required
+          />
+          <br />
+          <label for="edit_product_price">Price:</label>
+          <input
+            type="number"
+            id="edit_product_price"
+            name="product_price"
+            required
+          />
+          <br />
+          <label for="edit_product_image_url">Image URL:</label>
+          <input
+            type="text"
+            id="edit_product_image_url"
+            name="product_image_url"
+            required
+          />
+          <br />
+          <label for="edit_listing_status">Display:</label>
+          <select id="edit_listing_status" name="listing_status" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <section class="social-media">
+        <div class="social-media-section">
+          <div class="social-media-level">
+            <div class="social-media-left">
+              <p class="logo-name">Lumina</p>
+              <p class="tag-line">
+                Your One-Stop Shop for Radiant Skin and Beauty
+              </p>
+            </div>
+            <div class="social-media-right">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </footer>
+      </section>
+    </footer>
+  </body>
 </html>
