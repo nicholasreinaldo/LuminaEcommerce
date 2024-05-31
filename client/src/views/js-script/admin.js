@@ -1,3 +1,5 @@
+// /client/views/js-script/admin.js
+
 document.addEventListener('DOMContentLoaded', async () => {
   const fetchProducts = async () => {
     try {

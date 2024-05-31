@@ -1,3 +1,5 @@
+// /server/src/routes/routes.products.js
+
 const express = require('express')
 const router = express.Router()
 const knex = require('../../../db')

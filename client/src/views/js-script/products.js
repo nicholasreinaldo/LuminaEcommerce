@@ -1,3 +1,5 @@
+// /client/views/js-script/products.js
+
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const response = await fetch('/api/products')
