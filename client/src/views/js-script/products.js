@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       productCard.className = 'product-card'
 
       // Prepend the static path to the image URL
-      const imageUrl = `/src/assets/${product.product_image_url}`
+      const imageUrl = `/src/assets/product-images/${product.product_image_url}`
 
       productCard.innerHTML = `
           <img src="${imageUrl}" alt="${product.product_name}" />
