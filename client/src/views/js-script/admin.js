@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         productTableBody.appendChild(productRow)
       })
 
-      // Add event listeners to the delete buttons
       document.querySelectorAll('.delete-button').forEach((button) => {
         button.addEventListener('click', async (event) => {
           const productId = event.target.getAttribute('data-id')
@@ -65,10 +64,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Initial fetch of products
   await fetchProducts()
 
-  // Handle form submission for adding a new product
   const addProductForm = document.getElementById('add-product-form')
   addProductForm.addEventListener('submit', async (event) => {
     event.preventDefault()
