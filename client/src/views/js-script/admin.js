@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', async () => {
   // Handle editing a product
   const handleEditProduct = async (event) => {
-    const productId = event.target.getAttribute('data-id')
+    let productId = event.target.getAttribute('data-id')
+    if (!productId && event.target.parentElement) {
+      productId = event.target.parentElement.getAttribute('data-id')
+    }
+    if (!productId) {
+      console.error('No product ID found for editing')
+      return
+    }
+
     try {
       const response = await fetch(`/api/admin/products/${productId}`)
       if (!response.ok) {
@@ -27,7 +35,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Handle deleting a product
   const handleDeleteProduct = async (event) => {
-    const productId = event.target.getAttribute('data-id')
+    let productId = event.target.getAttribute('data-id')
+    if (!productId && event.target.parentElement) {
+      productId = event.target.parentElement.getAttribute('data-id')
+    }
+    if (!productId) {
+      console.error('No product ID found for deleting')
+      return
+    }
+
     try {
       const response = await fetch(`/api/admin/products/${productId}`, {
         method: 'DELETE',
@@ -77,7 +93,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           </td>
           <td><button data-id="${
             product.id
-          }" class="edit-btn"><i class="fas fa-edit"></button></td>
+          }" class="edit-btn"><i class="fas fa-edit"></i></button></td>
           <td><button data-id="${
             product.id
           }" class="delete-btn">Delete</button></td>
