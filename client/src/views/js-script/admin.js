@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           }" class="edit-btn"><i class="fas fa-edit"></i></button></td>
           <td><button data-id="${
             product.id
-          }" class="delete-btn">Delete</button></td>
+          }" class="delete-btn"><i class="fa fa-trash"></i></button></td>
         `
         productTableBody.appendChild(productRow)
       })
