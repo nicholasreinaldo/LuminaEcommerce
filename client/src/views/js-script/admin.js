@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td>${product.brand_name}</td>
           <td>${product.product_name}</td>
           <td>${product.stock_amount}</td>
-          <td>Rp ${product.product_price}</td>
+          <td>${product.product_price}</td>
           <td><img src="/src/assets/product-images/${
             product.product_image_url
           }" alt="${
