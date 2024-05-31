@@ -1,4 +1,3 @@
-// client/src/views/js-script/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
   const fetchProducts = async () => {
     try {
@@ -116,7 +115,12 @@ document.addEventListener('DOMContentLoaded', async () => {
           product.listing_status.toString()
 
         // Show the modal
-        document.getElementById('editProductModal').style.display = 'block'
+        const modal = document.getElementById('editProductModal')
+        modal.style.display = 'block'
+        console.log(
+          'Modal display style after setting to block:',
+          modal.style.display,
+        ) // Debugging
       } else {
         console.error('Error fetching product:', response.statusText)
       }
