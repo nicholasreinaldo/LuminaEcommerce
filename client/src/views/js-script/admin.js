@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           </td>
           <td><button data-id="${
             product.id
-          }" class="edit-btn">Edit</button></td>
+          }" class="edit-btn"><i class="fas fa-edit"></button></td>
           <td><button data-id="${
             product.id
           }" class="delete-btn">Delete</button></td>
