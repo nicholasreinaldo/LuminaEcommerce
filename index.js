@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/', indexRouter)
 app.use('/api', productsRouter)
 app.use('/admin', adminRouter)
-app.use('/api/admin', adminRouter) // Update this line to use the correct path for adminRouter
+app.use('/api/admin', adminRouter)
 
 /* Get Login Page */
 app.get('/login', (req, res) => res.render('login'))
