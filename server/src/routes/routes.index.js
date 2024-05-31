@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router()
 
-/* Get Home Page */
+// Route to access index /
 router.get('/', (req, res) => res.render('index'))
 
 module.exports = router

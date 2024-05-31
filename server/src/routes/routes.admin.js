@@ -2,9 +2,10 @@ const express = require('express')
 const router = express.Router()
 const adminController = require('../controllers/controller.admin')
 
+// Route to access /admin
 router.get('/', (req, res) => res.render('admin'))
 
-// Route to create a product
+// Route to create a new product
 router.post('/products', adminController.createProduct)
 
 // Route to delete a product
