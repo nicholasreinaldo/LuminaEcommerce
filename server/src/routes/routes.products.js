@@ -39,6 +39,21 @@ router.get('/products/:id', async (req, res) => {
   }
 })
 
+// Route to access a single product by ID in the admin dashboard
+router.get('/admin/products/:id', async (req, res) => {
+  const { id } = req.params
+  try {
+    const product = await knex('products').where({ id }).first()
+    if (!product) {
+      return res.status(404).json({ message: 'Product not found' })
+    }
+    res.json(product)
+  } catch (err) {
+    console.error(err)
+    res.status(500).json({ message: 'Internal server error' })
+  }
+})
+
 router.post('/admin/products', adminController.createProduct)
 
 module.exports = router
