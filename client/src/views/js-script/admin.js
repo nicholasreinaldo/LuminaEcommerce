@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td>${product.product_name}</td>
           <td>${product.stock_amount}</td>
           <td>Rp ${product.product_price}</td>
-          <td><img src="/src/assets/${product.product_image_url}" alt="${
+          <td><img src="/src/assets/product-images/${
+            product.product_image_url
+          }" alt="${
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
           <td>
