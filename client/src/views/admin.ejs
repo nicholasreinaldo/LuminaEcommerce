@@ -48,6 +48,7 @@
                 <th>Image</th>
                 <th>Display</th>
                 <th>Edit Product</th>
+                <th>Delete Product</th>
               </tr>
             </thead>
             <tbody class="product-table-body">
@@ -60,8 +61,10 @@
           <form id="add-product-form">
             <label for="brand_name">Brand:</label>
             <input type="text" id="brand_name" name="brand_name" required />
+            <br />
             <label for="product_name">Name:</label>
             <input type="text" id="product_name" name="product_name" required />
+            <br />
             <label for="stock_amount">Stock:</label>
             <input
               type="number"
@@ -69,6 +72,7 @@
               name="stock_amount"
               required
             />
+            <br />
             <label for="product_price">Price:</label>
             <input
               type="number"
@@ -76,6 +80,7 @@
               name="product_price"
               required
             />
+            <br />
             <label for="product_image_url">Image URL:</label>
             <input
               type="text"
@@ -83,11 +88,13 @@
               name="product_image_url"
               required
             />
+            <br />
             <label for="listing_status">Display:</label>
             <select id="listing_status" name="listing_status" required>
               <option value="true">Yes</option>
               <option value="false">No</option>
             </select>
+            <br />
             <button type="submit">Add Product</button>
           </form>
         </div>

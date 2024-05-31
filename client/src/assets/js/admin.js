@@ -12,27 +12,52 @@ document.addEventListener('DOMContentLoaded', async () => {
         const productRow = document.createElement('tr')
 
         productRow.innerHTML = `
-            <td>${product.brand_name}</td>
-            <td>${product.product_name}</td>
-            <td>${product.stock_amount}</td>
-            <td>${product.product_price}</td>
-            <td><img src="/src/assets/${product.product_image_url}" alt="${
+              <td>${product.brand_name}</td>
+              <td>${product.product_name}</td>
+              <td>${product.stock_amount}</td>
+              <td>Rp ${product.product_price}</td>
+              <td><img src="/src/assets/${product.product_image_url}" alt="${
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
-            <td>
-              <select data-id="${product.id}">
-                <option value="true" ${
-                  product.listing_status ? 'selected' : ''
-                }>Yes</option>
-                <option value="false" ${
-                  !product.listing_status ? 'selected' : ''
-                }>No</option>
-              </select>
-            </td>
-            <td><button data-id="${product.id}">Edit</button></td>
-          `
+              <td>
+                <select data-id="${product.id}">
+                  <option value="true" ${
+                    product.listing_status ? 'selected' : ''
+                  }>Yes</option>
+                  <option value="false" ${
+                    !product.listing_status ? 'selected' : ''
+                  }>No</option>
+                </select>
+              </td>
+              <td><button data-id="${
+                product.id
+              }" class="edit-button">Edit</button></td>
+              <td><button data-id="${
+                product.id
+              }" class="delete-button">Delete</button></td>
+            `
 
         productTableBody.appendChild(productRow)
+      })
+
+      // Add event listeners to the delete buttons
+      document.querySelectorAll('.delete-button').forEach((button) => {
+        button.addEventListener('click', async (event) => {
+          const productId = event.target.getAttribute('data-id')
+          try {
+            const response = await fetch(`/api/admin/products/${productId}`, {
+              method: 'DELETE',
+            })
+            if (response.ok) {
+              // Refresh the product list after a product is deleted
+              await fetchProducts()
+            } else {
+              console.error('Error deleting product:', response.statusText)
+            }
+          } catch (error) {
+            console.error('Error deleting product:', error)
+          }
+        })
       })
     } catch (error) {
       console.error('Error fetching products:', error)

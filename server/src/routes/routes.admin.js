@@ -1,7 +1,14 @@
-var express = require('express')
-var router = express.Router()
+// server/src/routes/routes.admin.js
+const express = require('express')
+const router = express.Router()
+const adminController = require('../controllers/controller.admin')
 
-/* Get Home Page */
 router.get('/', (req, res) => res.render('admin'))
+
+// Route to create a product
+router.post('/products', adminController.createProduct)
+
+// Route to delete a product
+router.delete('/products/:id', adminController.deleteProduct)
 
 module.exports = router
