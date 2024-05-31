@@ -94,52 +94,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   })
 
-  const handleEditProduct = (event) => {
-    const productId = event.target.getAttribute('data-id')
-
-    // Fetch the product details and populate the form
-    fetch(`/api/products/${productId}`)
-      .then((response) => response.json())
-      .then((product) => {
-        document.getElementById('edit_product_id').value = product.id
-        document.getElementById('edit_brand_name').value = product.brand_name
-        document.getElementById('edit_product_name').value =
-          product.product_name
-        document.getElementById('edit_stock_amount').value =
-          product.stock_amount
-        document.getElementById('edit_product_price').value =
-          product.product_price
-        document.getElementById('edit_product_image_url').value =
-          product.product_image_url
-        document.getElementById('edit_listing_status').value =
-          product.listing_status
-
-        // Show the modal
-        document.getElementById('editProductModal').style.display = 'block'
-      })
-      .catch((error) => console.error('Error fetching product:', error))
-  }
-
-  const handleDeleteProduct = async (event) => {
-    const productId = event.target.getAttribute('data-id')
-
-    try {
-      const response = await fetch(`/api/admin/products/${productId}`, {
-        method: 'DELETE',
-      })
-
-      if (response.ok) {
-        // Refresh the product list after deletion
-        await fetchProducts()
-      } else {
-        console.error('Error deleting product:', response.statusText)
-      }
-    } catch (error) {
-      console.error('Error deleting product:', error)
-    }
-  }
-
-  // Handle form submission for editing a product
   const handleEditProduct = async (event) => {
     const productId = event.target.getAttribute('data-id')
 
@@ -170,6 +124,65 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Error fetching product:', error)
     }
   }
+
+  const handleDeleteProduct = async (event) => {
+    const productId = event.target.getAttribute('data-id')
+
+    try {
+      const response = await fetch(`/api/admin/products/${productId}`, {
+        method: 'DELETE',
+      })
+
+      if (response.ok) {
+        // Refresh the product list after deletion
+        await fetchProducts()
+      } else {
+        console.error('Error deleting product:', response.statusText)
+      }
+    } catch (error) {
+      console.error('Error deleting product:', error)
+    }
+  }
+
+  // Handle form submission for editing a product
+  const editProductForm = document.getElementById('edit-product-form')
+  editProductForm.addEventListener('submit', async (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(editProductForm)
+    const productId = formData.get('product_id')
+    const productData = {
+      brand_name: formData.get('brand_name'),
+      product_name: formData.get('product_name'),
+      stock_amount: formData.get('stock_amount'),
+      product_price: formData.get('product_price'),
+      product_image_url: formData.get('product_image_url'),
+      listing_status: formData.get('listing_status') === 'true',
+    }
+
+    try {
+      const response = await fetch(`/api/admin/products/${productId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(productData),
+      })
+
+      if (response.ok) {
+        // Refresh the product list after editing
+        await fetchProducts()
+        editProductForm.reset() // Clear the form
+
+        // Hide the modal
+        document.getElementById('editProductModal').style.display = 'none'
+      } else {
+        console.error('Error editing product:', response.statusText)
+      }
+    } catch (error) {
+      console.error('Error editing product:', error)
+    }
+  })
 
   // Close the modal when the user clicks on <span> (x)
   const closeModal = document.querySelector('.close')
