@@ -23,7 +23,6 @@ router.get('/admin/products', async (req, res) => {
   }
 })
 
-// New endpoint to add a product
 router.post('/admin/products', adminController.createProduct)
 
 module.exports = router
