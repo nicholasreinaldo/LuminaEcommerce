@@ -1,4 +1,3 @@
-// client/src/assets/js/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
   const fetchProducts = async () => {
     try {
