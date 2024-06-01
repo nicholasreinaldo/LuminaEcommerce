@@ -35,3 +35,11 @@ To set up the Lumina website on your local machine, follow these steps:
    ```bash
    git clone https://github.com/yourusername/lumina.git
    cd lumina
+
+2. **Install dependencies**
+   ```bash
+   npm install ejs express knex pg
+   npm install -D nodemon
+3. **Start the Application**
+   ```bash
+   npm run start
