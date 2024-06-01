@@ -1,5 +1,5 @@
+// /client/src/views/js-script/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
-  // Handle editing a product
   const handleEditProduct = async (event) => {
     let productId = event.target.getAttribute('data-id')
     if (!productId && event.target.parentElement) {
@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Handle deleting a product
   const handleDeleteProduct = async (event) => {
     let productId = event.target.getAttribute('data-id')
     if (!productId && event.target.parentElement) {
@@ -58,7 +57,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Fetch products
   const fetchProducts = async () => {
     try {
       const response = await fetch('/api/admin/products')
@@ -111,10 +109,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Initial fetch of products
   await fetchProducts()
 
-  // Handle form submission for adding a new product
   const addProductForm = document.getElementById('add-product-form')
   addProductForm.addEventListener('submit', async (event) => {
     event.preventDefault()
@@ -138,6 +134,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (response.ok) {
         await fetchProducts()
         addProductForm.reset()
+        document.getElementById('addProductModal').style.display = 'none'
       } else {
         console.error('Error adding product:', response.statusText)
       }
@@ -146,7 +143,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   })
 
-  // Handle form submission for editing a product
   const editProductForm = document.getElementById('edit-product-form')
   editProductForm.addEventListener('submit', async (event) => {
     event.preventDefault()
@@ -180,14 +176,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   })
 
-  // Close the modal when the user clicks on <span> (x)
-  const closeModal = document.querySelector('.close')
-  closeModal.addEventListener('click', () => {
+  const closeAddProductModal = document.querySelector('#addProductModal .close')
+  closeAddProductModal.addEventListener('click', () => {
+    document.getElementById('addProductModal').style.display = 'none'
+  })
+
+  const openAddProductModalButton = document.getElementById(
+    'openAddProductModal',
+  )
+  openAddProductModalButton.addEventListener('click', () => {
+    document.getElementById('addProductModal').style.display = 'block'
+  })
+
+  const closeEditProductModal = document.querySelector(
+    '#editProductModal .close',
+  )
+  closeEditProductModal.addEventListener('click', () => {
     document.getElementById('editProductModal').style.display = 'none'
   })
 
-  // Close the modal when the user clicks outside of the modal
   window.addEventListener('click', (event) => {
+    if (event.target === document.getElementById('addProductModal')) {
+      document.getElementById('addProductModal').style.display = 'none'
+    }
     if (event.target === document.getElementById('editProductModal')) {
       document.getElementById('editProductModal').style.display = 'none'
     }
