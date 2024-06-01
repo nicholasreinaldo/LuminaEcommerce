@@ -20,6 +20,7 @@ app.use(express.urlencoded({ extended: true }))
 
 /* Using all routers */
 app.use('/', indexRouter)
+app.use('/user', usersRouter)
 app.use('/api', productsRouter)
 app.use('/admin', adminRouter)
 app.use('/api/admin', adminRouter)

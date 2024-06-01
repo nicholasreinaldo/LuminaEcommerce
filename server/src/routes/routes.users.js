@@ -1,8 +1,6 @@
-// var express = require('express')
-// var router = express.Router()
+var express = require('express')
+var router = express.Router()
 
-// router.get('/', function (req, res, next) {
-//   res.send('test')
-// })
+router.get('/', (req, res) => res.render('user'))
 
-// module.exports = router
+module.exports = router
