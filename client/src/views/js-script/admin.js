@@ -1,3 +1,4 @@
+// client/src/views/js-script/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
   function formatPrice(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
@@ -95,14 +96,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('/api/admin/products')
+      const response = await fetch('/api/admin/products') // Ensure this endpoint is calling the getProducts function above
       if (!response.ok) {
         console.error('Error fetching products:', response.statusText)
         return
       }
       const products = await response.json()
       const productTableBody = document.querySelector('.product-table-body')
-      productTableBody.innerHTML = ''
+      productTableBody.innerHTML = '' // Clear any existing rows
       products.forEach((product) => {
         const productRow = document.createElement('tr')
         productRow.setAttribute('data-id', product.id)
@@ -180,7 +181,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         body: JSON.stringify(productData),
       })
       if (response.ok) {
-        await fetchProducts()
+        await fetchProducts() // Re-fetch products after adding a new one
         addProductForm.reset()
         document.getElementById('addProductModal').style.display = 'none'
       } else {
@@ -223,10 +224,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   })
 
-  const cancelAddProductModal = document.querySelector(
-    '#addProductModal .cancel',
-  )
-  cancelAddProductModal.addEventListener('click', () => {
+  const closeAddProductModal = document.querySelector('#addProductModal .close')
+  closeAddProductModal.addEventListener('click', () => {
     document.getElementById('addProductModal').style.display = 'none'
   })
 
@@ -237,17 +236,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('addProductModal').style.display = 'block'
   })
 
-  const cancelEditProductModal = document.querySelector(
-    '#editProductModal .cancel',
+  const closeEditProductModal = document.querySelector(
+    '#editProductModal .close',
   )
-  cancelEditProductModal.addEventListener('click', () => {
+  closeEditProductModal.addEventListener('click', () => {
     document.getElementById('editProductModal').style.display = 'none'
   })
 
   window.addEventListener('click', (event) => {
     if (event.target === document.getElementById('addProductModal')) {
       document.getElementById('addProductModal').style.display = 'none'
-    } else if (event.target === document.getElementById('editProductModal')) {
+    }
+    if (event.target === document.getElementById('editProductModal')) {
       document.getElementById('editProductModal').style.display = 'none'
     }
   })
