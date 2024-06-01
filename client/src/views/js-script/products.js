@@ -6,14 +6,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const products = await response.json()
 
     const productContainer = document.querySelector('.product-container')
-    products.forEach((product) => {
-      const productCard = document.createElement('div')
-      productCard.className = 'product-card'
+    productContainer.innerHTML = '' // Clear existing products
+    products
+      .filter((product) => product.listing_status) // Only display products with listing_status set to true
+      .forEach((product) => {
+        const productCard = document.createElement('div')
+        productCard.className = 'product-card'
 
-      // Prepend the static path to the image URL
-      const imageUrl = `/src/assets/product-images/${product.product_image_url}`
+        const imageUrl = `/src/assets/product-images/${product.product_image_url}`
 
-      productCard.innerHTML = `
+        productCard.innerHTML = `
           <img src="${imageUrl}" alt="${product.product_name}" />
           <h3>${product.brand_name}</h3>
           <p>${product.product_name}</p>
@@ -23,8 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           </div>
         `
 
-      productContainer.appendChild(productCard)
-    })
+        productContainer.appendChild(productCard)
+      })
   } catch (error) {
     console.error('Error fetching products:', error)
   }
