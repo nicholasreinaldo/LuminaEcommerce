@@ -572,7 +572,7 @@ input:not(:checked) + .slider .switch-label.off {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  vertical-align: 10px;
+  vertical-align: top;
 }
 
 .close:hover,
