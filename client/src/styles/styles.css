@@ -570,7 +570,7 @@ input:not(:checked) + .slider .switch-label.off {
   margin: 10% auto 15% auto;
   padding: 30px;
   border: 1px solid #888;
-  width: 75%;
+  width: 600px;
 }
 
 .close {
