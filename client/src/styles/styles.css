@@ -618,3 +618,8 @@ input:not(:checked) + .slider .switch-label.off {
 .submit-button:hover {
   background-color: #45a049;
 }
+
+.submit-button-div {
+  display: flex;
+  justify-content: center;
+}
