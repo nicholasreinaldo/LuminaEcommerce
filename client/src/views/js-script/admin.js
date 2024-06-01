@@ -1,5 +1,8 @@
-// /client/src/views/js-script/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
+  function formatPrice(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+  }
+
   const handleEditProduct = async (event) => {
     let productId = event.target.getAttribute('data-id')
     if (!productId && event.target.parentElement) {
@@ -56,6 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Error deleting product:', error)
     }
   }
+
   const handleListingStatusChange = async (event) => {
     const productId = event.target.getAttribute('data-id')
     const newStatus = event.target.value === 'true'
@@ -98,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <td>${product.brand_name}</td>
           <td>${product.product_name}</td>
           <td>${product.stock_amount}</td>
-          <td>${product.product_price}</td>
+          <td>${formatPrice(product.product_price)}</td>
           <td><img src="/src/assets/product-images/${
             product.product_image_url
           }" alt="${
