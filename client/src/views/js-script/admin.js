@@ -109,21 +109,23 @@ document.addEventListener('DOMContentLoaded', async () => {
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
           <td>
-            <select data-id="${product.id}">
-              <option value="true" ${
-                product.listing_status ? 'selected' : ''
-              }>Yes</option>
-              <option value="false" ${
-                !product.listing_status ? 'selected' : ''
-              }>No</option>
-            </select>
+            <div class="modify-buttons">
+              <select data-id="${product.id}" class="listing-status">
+                <option value="true" ${
+                  product.listing_status ? 'selected' : ''
+                }>Yes</option>
+                <option value="false" ${
+                  !product.listing_status ? 'selected' : ''
+                }>No</option>
+              </select>
+              <button data-id="${
+                product.id
+              }" class="edit-btn"><i class="fas fa-edit"></i></button>
+              <button data-id="${
+                product.id
+              }" class="delete-btn"><i class="fa fa-trash"></i></button>
+            </div>
           </td>
-          <td><button data-id="${
-            product.id
-          }" class="edit-btn"><i class="fas fa-edit"></i></button></td>
-          <td><button data-id="${
-            product.id
-          }" class="delete-btn"><i class="fa fa-trash"></i></button></td>
         `
         productTableBody.appendChild(productRow)
       })
@@ -133,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       document.querySelectorAll('.delete-btn').forEach((button) => {
         button.addEventListener('click', handleDeleteProduct)
       })
-      document.querySelectorAll('select[data-id]').forEach((select) => {
+      document.querySelectorAll('.listing-status').forEach((select) => {
         select.addEventListener('change', handleListingStatusChange)
       })
     } catch (error) {
