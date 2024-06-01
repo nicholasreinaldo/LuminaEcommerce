@@ -332,14 +332,20 @@ body {
 .admin-menu-title {
   font-weight: 700;
   font-size: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.add-product {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .add-product button {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #0093c4;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -351,10 +357,11 @@ body {
 .add-product button i {
   margin-right: 8px;
   font-size: 18px;
+  color: white;
 }
 
 .add-product button:hover {
-  background-color: #008cba;
+  background-color: #45a049;
 }
 
 .add-product button:focus {
@@ -363,7 +370,7 @@ body {
 }
 
 .add-product button:active {
-  background-color: #006688;
+  background-color: #3e8e41;
 }
 
 .products-table {
