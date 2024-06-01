@@ -489,6 +489,10 @@ body {
   border-radius: 30px;
 }
 
+.slider:hover {
+  background-color: rgb(86, 86, 86);
+}
+
 .slider:before {
   position: absolute;
   content: '';
@@ -503,6 +507,10 @@ body {
 
 input:checked + .slider {
   background-color: rgb(68, 167, 68);
+}
+
+input:checked + .slider:hover {
+  background-color: rgb(50, 124, 50);
 }
 
 input:checked + .slider:before {
