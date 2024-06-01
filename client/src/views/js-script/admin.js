@@ -99,33 +99,37 @@ document.addEventListener('DOMContentLoaded', async () => {
       products.forEach((product) => {
         const productRow = document.createElement('tr')
         productRow.innerHTML = `
-          <td>${product.brand_name}</td>
-          <td>${product.product_name}</td>
-          <td>${product.stock_amount}</td>
-          <td>${formatPrice(product.product_price)}</td>
-          <td><img src="/src/assets/product-images/${
-            product.product_image_url
-          }" alt="${
+        <td>${product.brand_name}</td>
+        <td>${product.product_name}</td>
+        <td>${product.stock_amount}</td>
+        <td>${formatPrice(product.product_price)}</td>
+        <td><img src="/src/assets/product-images/${
+          product.product_image_url
+        }" alt="${
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
-          <td>
-            <div class="modify-buttons">
-              <select data-id="${product.id}" class="listing-status">
-                <option value="true" ${
-                  product.listing_status ? 'selected' : ''
-                }>Yes</option>
-                <option value="false" ${
-                  !product.listing_status ? 'selected' : ''
-                }>No</option>
-              </select>
-              <button data-id="${
+        <td>
+          <div class="modify-buttons">
+            <label class="toggle-switch">
+              <input type="checkbox" data-id="${
                 product.id
-              }" class="edit-btn"><i class="fas fa-edit"></i></button>
-              <button data-id="${
-                product.id
-              }" class="delete-btn"><i class="fa fa-trash"></i></button>
-            </div>
-          </td>
+              }" class="listing-status" ${
+          product.listing_status ? 'checked' : ''
+        } />
+              <span class="slider">
+                <span class="switch-label">${
+                  product.listing_status ? 'On' : 'Off'
+                }</span>
+              </span>
+            </label>
+            <button data-id="${
+              product.id
+            }" class="edit-btn"><i class="fas fa-edit"></i></button>
+            <button data-id="${
+              product.id
+            }" class="delete-btn"><i class="fa fa-trash"></i></button>
+          </div>
+        </td>
         `
         productTableBody.appendChild(productRow)
       })
