@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } />
                 <span class="slider">
                   <span class="switch-label">${
-                    product.listing_status ? 'On' : 'Off'
+                    product.listing_status ? 'ON' : 'OFF'
                   }</span>
                 </span>
               </label>
