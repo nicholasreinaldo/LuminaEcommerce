@@ -27,7 +27,7 @@ Welcome to Lumina, an e-commerce platform designed to provide a seamless skin ca
 ### Admin Features
 - **Admin Login**: Admins can log in to the admin dashboard.
 - **Product Management**: Admins can add, update, or delete products from the catalog.
-- **Order Management**: Admins can view orders and change the status of product orders (e.g., pending, shipped, delivered).
+- **Order Management**: Admins can view orders and change the status of product orders (confirmed, , delivered).
 
 ## Installation
 
@@ -49,7 +49,11 @@ To set up the Lumina website on your local machine, follow these steps:
 ## User Guideline 
 
 ### User Registration and Login
+1. Navigate to http://localhost:3000/login
 ### Product Browsing & Add to Cart
+1. Navigate to http://localhost:3000/
+2. 2. 
+
 ### Accessing User Dashboard & Checkout
 
 ## Admin Guideline
