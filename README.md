@@ -7,10 +7,22 @@ Welcome to Lumina, an e-commerce platform designed to provide a seamless shoppin
   - [User Features](#user-features)
   - [Admin Features](#admin-features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [User Guideline](#user-guideline)
   - [User Login](#user-login)
+  - [Product Browsing & Add to Cart](#product-browsing)
+- [Admin Guideline](#admin-guideline)
   - [Admin Login](#admin-login)
-  - 
+  - [Product Management](#product-management)
+  - [Order Management](#order-management)
+### User Registration and Login
+### Product Browsing & Add to Cart
+### Accessing User Dashboard & Checkout
+## Admin Guideline
+### Admin Login
+### Product Management 
+### Order Management
+
+
 
 ## Features
 
