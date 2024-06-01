@@ -516,11 +516,11 @@ input:checked + .slider:before {
 }
 
 .switch-label.on {
-  left: 10px;
+  right: 10px;
 }
 
 .switch-label.off {
-  left: 30px;
+  left: 11px;
 }
 
 /* Hide the label text based on the state of the switch */
