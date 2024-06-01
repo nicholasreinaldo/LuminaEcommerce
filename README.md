@@ -10,8 +10,7 @@ Welcome to Lumina, an e-commerce platform designed to provide a seamless shoppin
 - [Usage](#usage)
   - [User Login](#user-login)
   - [Admin Login](#admin-login)
-- [Contributing](#contributing)
-- [License](#license)
+  - 
 
 ## Features
 
@@ -43,3 +42,15 @@ To set up the Lumina website on your local machine, follow these steps:
 3. **Start the Application**
    ```bash
    npm run start
+
+## User Guideline 
+
+### User Registration and Login
+### Product Browsing & Add to Cart
+### Accessing User Dashboard & Checkout
+
+## Admin Guideline
+
+### Admin Login
+### Product Management 
+### Product Management 
