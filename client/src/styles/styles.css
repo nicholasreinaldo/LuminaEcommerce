@@ -361,16 +361,11 @@ body {
 }
 
 .add-product button:hover {
-  background-color: #45a049;
-}
-
-.add-product button:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background-color: #3c8e40;
 }
 
 .add-product button:active {
-  background-color: #3e8e41;
+  background-color: #2e6930;
 }
 
 .products-table {
@@ -434,6 +429,22 @@ body {
 
 .modify-buttons .delete-btn {
   background-color: rgb(157, 0, 0);
+}
+
+.modify-buttons .edit-btn:hover {
+  background-color: #3c8e40;
+}
+
+.modify-buttons .edit-btn:active {
+  background-color: #3c8e40;
+}
+
+.modify-buttons .delete-btn:hover {
+  background-color: #3c8e40;
+}
+
+.modify-buttons .delete-btn:active {
+  background-color: #2e6930;
 }
 
 /* Edit button Modal styling */
