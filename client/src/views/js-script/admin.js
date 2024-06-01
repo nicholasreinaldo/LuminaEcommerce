@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const handleListingStatusChange = async (event) => {
     const productId = event.target.getAttribute('data-id')
-    const newStatus = event.target.value === 'true'
+    const newStatus = event.target.checked
 
     try {
       const response = await fetch(

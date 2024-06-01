@@ -68,8 +68,11 @@ exports.updateListingStatus = async (req, res) => {
   const { id } = req.params
   const { listing_status } = req.body
 
+  // Ensure listing_status is a boolean
+  const status = listing_status === 'true' || listing_status === true
+
   try {
-    await knex('products').where({ id }).update({ listing_status })
+    await knex('products').where({ id }).update({ listing_status: status })
     res.status(200).json({ message: 'Listing status updated successfully' })
   } catch (error) {
     console.error(error)
