@@ -1,0 +1,168 @@
+<!-- /client/src/views/admin.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="/src/views/js-script/admin.js" defer></script>
+    <title>Lumina Indonesia - Admin Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <nav class="nav-level">
+          <div class="nav-left">
+            <a class="nav-link" href="/"><p class="logo-name">Lumina</p></a>
+          </div>
+          <div class="nav-middle">
+            <ul>
+              <li class="nav-button">Products</li>
+              <li class="nav-button">Orders</li>
+              <li class="nav-button">My Profile</li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <ul>
+              <li class="nav-button">Logout</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="admin-menus">
+      <div class="products-menu">
+        <div class="edit-product">
+          <p>Active Products Dashboard</p>
+          <table class="products-table">
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Name</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Display</th>
+                <th>Edit Product</th>
+                <th>Delete Product</th>
+              </tr>
+            </thead>
+            <tbody class="product-table-body">
+              <!-- Product list -->
+            </tbody>
+          </table>
+        </div>
+        <div class="add-product">
+          <h3>Add New Product</h3>
+          <button id="openAddProductModal">Add New Product</button>
+        </div>
+      </div>
+      <div class="orders-menu"></div>
+      <div class="admin-menu"></div>
+    </section>
+
+    <!-- Add Product Modal -->
+    <div id="addProductModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Add New Product</h3>
+        <form id="add-product-form">
+          <label for="brand_name">Brand:</label>
+          <input type="text" id="brand_name" name="brand_name" required />
+          <br />
+          <label for="product_name">Name:</label>
+          <input type="text" id="product_name" name="product_name" required />
+          <br />
+          <label for="stock_amount">Stock:</label>
+          <input type="number" id="stock_amount" name="stock_amount" required />
+          <br />
+          <label for="product_price">Price:</label>
+          <input
+            type="number"
+            id="product_price"
+            name="product_price"
+            required
+          />
+          <br />
+          <label for="product_image_url">Image URL:</label>
+          <input
+            type="text"
+            id="product_image_url"
+            name="product_image_url"
+            required
+          />
+          <br />
+          <label for="listing_status">Display:</label>
+          <select id="listing_status" name="listing_status" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <button type="submit">Add Product</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Edit Product Modal -->
+    <div id="editProductModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="edit-product-form">
+          <p>Edit Product Data</p>
+          <input type="hidden" id="edit_product_id" name="product_id" />
+          <br />
+          <label for="edit_brand_name">Brand Name:</label>
+          <input type="text" id="edit_brand_name" name="brand_name" />
+          <br />
+          <label for="edit_product_name">Product Name:</label>
+          <input type="text" id="edit_product_name" name="product_name" />
+          <br />
+          <label for="edit_stock_amount">Stock Amount:</label>
+          <input type="number" id="edit_stock_amount" name="stock_amount" />
+          <br />
+          <label for="edit_product_price">Product Price:</label>
+          <input type="text" id="edit_product_price" name="product_price" />
+          <br />
+          <label for="edit_product_image_url">Product Image URL:</label>
+          <input
+            type="text"
+            id="edit_product_image_url"
+            name="product_image_url"
+          />
+          <br />
+          <label for="edit_listing_status">Listing Status:</label>
+          <select id="edit_listing_status" name="listing_status">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <section class="social-media">
+        <div class="social-media-section">
+          <div class="social-media-level">
+            <div class="social-media-left">
+              <p class="logo-name">Lumina</p>
+              <p class="tag-line">
+                Your One-Stop Shop for Radiant Skin and Beauty
+              </p>
+            </div>
+            <div class="social-media-right">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
