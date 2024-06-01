@@ -380,6 +380,14 @@ body {
   padding: 8px;
 }
 
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
 .products-table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
@@ -399,6 +407,8 @@ body {
 .modify-buttons {
   display: flex;
   gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .modify-buttons select {
@@ -415,6 +425,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 0 5px;
 }
 
 .modify-buttons button i {
@@ -445,8 +456,6 @@ body {
 .modify-buttons .delete-btn:active {
   background-color: rgb(105, 25, 25);
 }
-
-/* Toggle switch styling */
 
 /* Toggle switch styling */
 
