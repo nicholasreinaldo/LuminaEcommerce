@@ -563,6 +563,7 @@ input:not(:checked) + .slider .switch-label.off {
   padding: 10px 0px 20px 0px;
   font-weight: 700;
   font-size: 18px;
+  text-align: center;
 }
 
 .modal-content {
@@ -595,6 +596,7 @@ input:not(:checked) + .slider .switch-label.off {
 
 .form-row label {
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .form-input {
