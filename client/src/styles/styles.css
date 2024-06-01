@@ -497,7 +497,6 @@ input:checked + .slider:before {
 .switch-label {
   display: block;
   font-size: 12px;
-  text-align: center;
   color: white;
   position: absolute;
   width: 100%;
@@ -507,12 +506,12 @@ input:checked + .slider:before {
   font-weight: 700;
 }
 
-input:checked + .slider .switch-label {
-  color: white;
+.switch-label.on {
+  left: 10px;
 }
 
-input:not(:checked) + .slider .switch-label {
-  color: white;
+.switch-label.off {
+  right: 10px;
 }
 
 /* Edit button Modal styling */
