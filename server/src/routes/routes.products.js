@@ -8,7 +8,10 @@ const adminController = require('../controllers/controller.admin')
 // Route to access all products from database for listing in index
 router.get('/products', async (req, res) => {
   try {
-    const products = await knex.select('*').from('products')
+    const products = await knex
+      .select('*')
+      .from('products')
+      .orderBy('id', 'asc') // Order by 'id' or 'created_at'
     res.json(products)
   } catch (err) {
     console.error(err)
@@ -19,7 +22,10 @@ router.get('/products', async (req, res) => {
 // Route to access all products from database for listing in admin dashboard
 router.get('/admin/products', async (req, res) => {
   try {
-    const products = await knex.select('*').from('products')
+    const products = await knex
+      .select('*')
+      .from('products')
+      .orderBy('id', 'asc') // Order by 'id' or 'created_at'
     res.json(products)
   } catch (err) {
     console.error(err)
