@@ -609,6 +609,7 @@ input:not(:checked) + .slider .switch-label.off {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .submit-button:hover {
