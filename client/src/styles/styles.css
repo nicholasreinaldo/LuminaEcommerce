@@ -321,12 +321,18 @@ body {
 /* Admin Page styling section */
 
 .admin-menus {
-  padding: 165px 150px 173px 150px;
+  padding: 80px 150px 173px 150px;
   display: flex;
 }
 
 .products-menu {
   width: 100%;
+}
+
+.admin-menu-title {
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 30px;
 }
 
 .products-table {
