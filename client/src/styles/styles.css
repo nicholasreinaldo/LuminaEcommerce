@@ -424,27 +424,27 @@ body {
 }
 
 .modify-buttons .edit-btn {
-  background-color: rgb(0, 99, 164);
-}
-
-.modify-buttons .delete-btn {
-  background-color: rgb(157, 0, 0);
+  background-color: rgb(40, 118, 170);
 }
 
 .modify-buttons .edit-btn:hover {
-  background-color: #3c8e40;
+  background-color: rgb(29, 85, 122);
 }
 
 .modify-buttons .edit-btn:active {
-  background-color: #3c8e40;
+  background-color: rgb(23, 66, 95);
+}
+
+.modify-buttons .delete-btn {
+  background-color: rgb(186, 44, 44);
 }
 
 .modify-buttons .delete-btn:hover {
-  background-color: #3c8e40;
+  background-color: rgb(133, 31, 31);
 }
 
 .modify-buttons .delete-btn:active {
-  background-color: #2e6930;
+  background-color: rgb(105, 25, 25);
 }
 
 /* Edit button Modal styling */
