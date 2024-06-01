@@ -560,6 +560,7 @@ input:not(:checked) + .slider .switch-label.off {
 }
 
 .modal-title {
+  padding: 10px 0px 20px 0px;
   font-weight: 700;
   font-size: 18px;
 }
