@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000
 const indexRouter = require('./server/src/routes/routes.index')
 const adminRouter = require('./server/src/routes/routes.admin')
 const productsRouter = require('./server/src/routes/routes.products')
+const usersRouter = require('./server/src/routes/routes.users')
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'client')))
