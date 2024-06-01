@@ -1,3 +1,4 @@
+// client/src/views/js-script/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
   function formatPrice(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('/api/admin/products')
+      const response = await fetch('/api/admin/products') // Ensure this endpoint is calling the getProducts function above
       if (!response.ok) {
         console.error('Error fetching products:', response.statusText)
         return
@@ -118,23 +119,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         }" style="width: 50px; height: auto;" /></td>
           <td class="align-center">
             <div class="modify-buttons">
-            <label class="toggle-switch">
-            <input
-              type="checkbox"
-              data-id="${product.id}"
-              class="listing-status"
-              ${product.listing_status ? 'checked' : ''}
-            />
-            <span class="slider">
-              <span class="switch-label on" style="display: ${
-                product.listing_status ? 'block' : 'none'
-              }">ON</span>
-              <span class="switch-label off" style="display: ${
-                product.listing_status ? 'none' : 'block'
-              }">OFF</span>
-            </span>
-          </label>
-          
+              <label class="toggle-switch">
+                <input type="checkbox" data-id="${
+                  product.id
+                }" class="listing-status" ${
+          product.listing_status ? 'checked' : ''
+        } />
+                <span class="slider">
+                  <span class="switch-label on" style="display: ${
+                    product.listing_status ? 'block' : 'none'
+                  }">ON</span>
+                  <span class="switch-label off" style="display: ${
+                    product.listing_status ? 'none' : 'block'
+                  }">OFF</span>
+                </span>
+              </label>
               <button data-id="${
                 product.id
               }" class="edit-btn"><i class="fas fa-edit"></i></button>
@@ -182,7 +181,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         body: JSON.stringify(productData),
       })
       if (response.ok) {
-        await fetchProducts()
+        await fetchProducts() // Re-fetch products after adding a new one
         addProductForm.reset()
         document.getElementById('addProductModal').style.display = 'none'
       } else {
