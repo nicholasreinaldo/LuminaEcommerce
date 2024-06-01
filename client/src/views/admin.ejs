@@ -1,217 +1,125 @@
-<!-- client/src/views/admin.js -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/styles/styles.css" rel="stylesheet" />
+    <title>Admin Dashboard</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrQkz8R9Ghtpymd6e2b0pXy0J5C5VVUR/8bZufBqt5weF5eP8h5NQvlbEv2ll/tCAYnuZ8Z/NBJdHgsLkg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script src="/src/views/js-script/admin.js" defer></script>
-    <title>Lumina Indonesia - Admin Dashboard</title>
+    <link rel="stylesheet" href="/src/styles/admin.css" />
   </head>
   <body>
-    <header>
-      <div class="nav-container">
-        <nav class="nav-level">
-          <div class="nav-left">
-            <a class="nav-link" href="/"><p class="logo-name">Lumina</p></a>
-          </div>
-          <div class="nav-middle"></div>
-          <div class="nav-right">
-            <ul>
-              <li class="nav-button">Logout</li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <section class="admin-menus">
-      <div class="products-menu">
-        <div class="edit-product">
-          <p class="admin-menu-title">Product Management Dashboard</p>
-          <div class="add-product">
-            <button id="openAddProductModal">
-              <i class="fas fa-plus-circle"></i> Add New
-            </button>
-          </div>
-          <table class="products-table">
-            <thead>
-              <tr>
-                <th>Brand</th>
-                <th>Name</th>
-                <th>Stock</th>
-                <th>Price</th>
-                <th>Image</th>
-                <th>Modify</th>
-              </tr>
-            </thead>
-            <tbody class="product-table-body">
-              <!-- Product list -->
-            </tbody>
-          </table>
+    <div class="container">
+      <h1>Admin Dashboard</h1>
+      <button id="openAddProductModal" class="button">Add Product</button>
+      <div id="addProductModal" class="modal">
+        <div class="modal-content">
+          <h2>Add Product</h2>
+          <form id="add-product-form">
+            <input
+              type="text"
+              name="brand_name"
+              placeholder="Brand Name"
+              required
+            />
+            <input
+              type="text"
+              name="product_name"
+              placeholder="Product Name"
+              required
+            />
+            <input
+              type="number"
+              name="stock_amount"
+              placeholder="Stock Amount"
+              required
+            />
+            <input
+              type="number"
+              name="product_price"
+              placeholder="Product Price"
+              required
+            />
+            <input
+              type="text"
+              name="product_image_url"
+              placeholder="Product Image URL"
+              required
+            />
+            <button type="submit">Add Product</button>
+            <button type="button" class="button cancel">Cancel</button>
+          </form>
         </div>
       </div>
-      <div class="orders-menu"></div>
-      <div class="admin-menu"></div>
-    </section>
-
-    <!-- Add Product Modal -->
-    <div id="addProductModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <form id="add-product-form">
-          <p class="modal-title">Add Product</p>
-          <div class="form-row">
-            <label for="brand_name">Brand Name</label>
+      <div id="editProductModal" class="modal">
+        <div class="modal-content">
+          <h2>Edit Product</h2>
+          <form id="edit-product-form">
             <input
-              type="text"
-              id="brand_name"
-              name="brand_name"
-              class="form-input"
+              type="hidden"
+              id="edit_product_id"
+              name="product_id"
               required
             />
-          </div>
-          <div class="form-row">
-            <label for="product_name">Product Name</label>
-            <input
-              type="text"
-              id="product_name"
-              name="product_name"
-              class="form-input"
-              required
-            />
-          </div>
-          <div class="form-row">
-            <label for="stock_amount">Stock Amount</label>
-            <input
-              type="number"
-              id="stock_amount"
-              name="stock_amount"
-              class="form-input"
-              required
-            />
-          </div>
-          <div class="form-row">
-            <label for="product_price">Price</label>
-            <input
-              type="number"
-              id="product_price"
-              name="product_price"
-              class="form-input"
-              required
-            />
-          </div>
-          <div class="form-row">
-            <label for="product_image_url">Image File Name</label>
-            <input
-              type="text"
-              id="product_image_url"
-              name="product_image_url"
-              class="form-input"
-              required
-            />
-          </div>
-          <div class="submit-button-div">
-            <button type="submit" class="submit-button">Add Product</button>
-            <button type="button" class="cancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Edit Product Modal -->
-    <div id="editProductModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <form id="edit-product-form">
-          <p class="modal-title">Edit Product</p>
-          <input type="hidden" id="edit_product_id" name="product_id" />
-          <div class="form-row">
-            <label for="edit_brand_name">Brand Name</label>
             <input
               type="text"
               id="edit_brand_name"
               name="brand_name"
-              class="form-input"
+              placeholder="Brand Name"
+              required
             />
-          </div>
-          <div class="form-row">
-            <label for="edit_product_name">Product Name</label>
             <input
               type="text"
               id="edit_product_name"
               name="product_name"
-              class="form-input"
+              placeholder="Product Name"
+              required
             />
-          </div>
-          <div class="form-row">
-            <label for="edit_stock_amount">Stock Amount</label>
             <input
               type="number"
               id="edit_stock_amount"
               name="stock_amount"
-              class="form-input"
+              placeholder="Stock Amount"
+              required
             />
-          </div>
-          <div class="form-row">
-            <label for="edit_product_price">Price</label>
             <input
               type="number"
               id="edit_product_price"
               name="product_price"
-              class="form-input"
+              placeholder="Product Price"
+              required
             />
-          </div>
-          <div class="form-row">
-            <label for="edit_product_image_url">Image File Name</label>
             <input
               type="text"
               id="edit_product_image_url"
               name="product_image_url"
-              class="form-input"
+              placeholder="Product Image URL"
+              required
             />
-          </div>
-          <div class="submit-button-div">
-            <button type="submit" class="submit-button">Save Changes</button>
-            <button type="button" class="cancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Delete Confirmation Modal -->
-    <div id="deleteConfirmationModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="modal-title">Are you sure you want to delete this product?</p>
-        <div class="confirmation-buttons">
-          <button id="confirmDeleteButton" class="confirm-button">Yes</button>
-          <button id="cancelDeleteButton" class="cancel-button">No</button>
+            <button type="submit">Save Changes</button>
+            <button type="button" class="button cancel">Cancel</button>
+          </form>
         </div>
       </div>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Brand Name</th>
+            <th>Product Name</th>
+            <th class="align-center">Stock Amount</th>
+            <th class="align-right">Product Price</th>
+            <th class="align-center">Image</th>
+            <th class="align-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="product-table-body"></tbody>
+      </table>
     </div>
-    <footer>
-      <section class="social-media">
-        <div class="social-media-section">
-          <div class="social-media-level">
-            <div class="social-media-left">
-              <p class="logo-name">Lumina</p>
-              <p class="tag-line">
-                Your One-Stop Shop for Radiant Skin and Beauty
-              </p>
-            </div>
-            <div class="social-media-right">
-              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+    <script src="/src/scripts/admin.js"></script>
   </body>
 </html>
