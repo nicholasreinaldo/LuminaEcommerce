@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         product.product_price
       document.getElementById('edit_product_image_url').value =
         product.product_image_url
-      document.getElementById('edit_listing_status').value =
-        product.listing_status.toString()
       document.getElementById('editProductModal').style.display = 'block'
     } catch (error) {
       console.error('Error fetching product:', error)
@@ -174,7 +172,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       stock_amount: formData.get('stock_amount'),
       product_price: formData.get('product_price'),
       product_image_url: formData.get('product_image_url'),
-      listing_status: formData.get('listing_status') === 'true',
     }
     try {
       const response = await fetch('/api/admin/products', {
@@ -207,7 +204,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       stock_amount: formData.get('stock_amount'),
       product_price: formData.get('product_price'),
       product_image_url: formData.get('product_image_url'),
-      listing_status: formData.get('listing_status') === 'true',
     }
     try {
       const response = await fetch(`/api/admin/products/${productId}`, {
