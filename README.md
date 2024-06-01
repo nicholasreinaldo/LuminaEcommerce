@@ -38,8 +38,11 @@ To set up the Lumina website on your local machine, follow these steps:
 
 ## Admin Guideline
 
+### Admin Register
 ### Admin Login
-### Product Management 
+### Add Product 
+### Edit Product  
+### Delete Product  
 
 ## Feature updates plan (After Gold Challenge)
 ### Admin Features
