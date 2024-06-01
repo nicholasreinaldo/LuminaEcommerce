@@ -79,7 +79,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!response.ok) {
         console.error('Error updating listing status:', response.statusText)
       } else {
-        await fetchProducts()
+        const productRow = document.querySelector(`tr[data-id="${productId}"]`)
+        const switchLabelOn = productRow.querySelector('.switch-label.on')
+        const switchLabelOff = productRow.querySelector('.switch-label.off')
+        if (newStatus) {
+          switchLabelOn.style.display = 'block'
+          switchLabelOff.style.display = 'none'
+        } else {
+          switchLabelOn.style.display = 'none'
+          switchLabelOff.style.display = 'block'
+        }
       }
     } catch (error) {
       console.error('Error updating listing status:', error)
@@ -98,6 +107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       productTableBody.innerHTML = '' // Clear any existing rows
       products.forEach((product) => {
         const productRow = document.createElement('tr')
+        productRow.setAttribute('data-id', product.id)
         productRow.innerHTML = `
           <td>${product.brand_name}</td>
           <td>${product.product_name}</td>
@@ -118,8 +128,12 @@ document.addEventListener('DOMContentLoaded', async () => {
               ${product.listing_status ? 'checked' : ''}
             />
             <span class="slider">
-              <span class="switch-label on">ON</span>
-              <span class="switch-label off">OFF</span>
+              <span class="switch-label on" style="display: ${
+                product.listing_status ? 'block' : 'none'
+              }">ON</span>
+              <span class="switch-label off" style="display: ${
+                product.listing_status ? 'none' : 'block'
+              }">OFF</span>
             </span>
           </label>
           
