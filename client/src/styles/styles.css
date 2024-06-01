@@ -381,6 +381,10 @@ body {
   padding: 8px;
 }
 
+.products-table th {
+  text-align: center;
+}
+
 .align-right {
   text-align: right;
 }
