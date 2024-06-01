@@ -411,8 +411,16 @@ body {
 }
 
 .modify-buttons button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
   border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .modify-buttons button i {
@@ -421,11 +429,11 @@ body {
 }
 
 .modify-buttons .edit-btn {
-  background-color: black;
+  background-color: rgb(0, 99, 164);
 }
 
 .modify-buttons .delete-btn {
-  background-color: black;
+  background-color: rgb(157, 0, 0);
 }
 
 /* Edit button Modal styling */
