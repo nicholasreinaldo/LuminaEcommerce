@@ -554,12 +554,17 @@ input:not(:checked) + .slider .switch-label.off {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.modal-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #888;
-  width: 80%;
+  width: 75%;
 }
 
 .close {
