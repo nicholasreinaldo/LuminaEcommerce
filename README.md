@@ -1,6 +1,6 @@
 # Lumina E-Commerce Website
 
-Welcome to Lumina, an e-commerce platform designed to provide a seamless shopping experience for users and robust management capabilities for admins.
+Welcome to Lumina, an e-commerce platform designed to provide a seamless shopping experience for users and robust management capabilities for admins. This project is designed for Binar Academy Gold Challenge level project which features CRUD function, REST API using Express.js, Node.js, PostgreSQL as the database, EJS and CSS based website.   
 
 ## Table of Contents
 - [Features](#features)
