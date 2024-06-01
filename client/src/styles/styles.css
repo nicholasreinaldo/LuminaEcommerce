@@ -354,7 +354,7 @@ body {
 }
 
 .add-product button:hover {
-  background-color: #45a049;
+  background-color: #008cba;
 }
 
 .add-product button:focus {
@@ -363,7 +363,7 @@ body {
 }
 
 .add-product button:active {
-  background-color: #3e8e41;
+  background-color: #006688;
 }
 
 .products-table {
