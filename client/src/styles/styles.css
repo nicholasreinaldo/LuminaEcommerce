@@ -411,7 +411,6 @@ body {
 }
 
 .modify-buttons button {
-  background: none;
   border: none;
   cursor: pointer;
 }
@@ -419,6 +418,14 @@ body {
 .modify-buttons button i {
   font-size: 18px;
   color: white;
+}
+
+.modify-buttons .edit-btn {
+  background-color: black;
+}
+
+.modify-buttons .delete-btn {
+  background-color: black;
 }
 
 /* Edit button Modal styling */
