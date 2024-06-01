@@ -561,7 +561,7 @@ input:not(:checked) + .slider .switch-label.off {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto 15% auto;
   padding: 30px;
   border: 1px solid #888;
   width: 75%;
