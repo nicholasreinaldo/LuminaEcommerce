@@ -595,7 +595,7 @@ input:not(:checked) + .slider .switch-label.off {
 }
 
 .form-row label {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: 700;
 }
 
@@ -620,6 +620,7 @@ input:not(:checked) + .slider .switch-label.off {
 }
 
 .submit-button-div {
+  padding-top: 10px;
   display: flex;
   justify-content: center;
 }
