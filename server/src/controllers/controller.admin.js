@@ -7,7 +7,6 @@ exports.createProduct = async (req, res) => {
     stock_amount,
     product_price,
     product_image_url,
-    listing_status,
   } = req.body
 
   try {
@@ -17,7 +16,6 @@ exports.createProduct = async (req, res) => {
       stock_amount,
       product_price,
       product_image_url,
-      listing_status,
     })
     res.status(201).json({ message: 'Product created successfully' })
   } catch (error) {
@@ -45,7 +43,6 @@ exports.updateProduct = async (req, res) => {
     stock_amount,
     product_price,
     product_image_url,
-    listing_status,
   } = req.body
 
   try {
@@ -55,7 +52,6 @@ exports.updateProduct = async (req, res) => {
       stock_amount,
       product_price,
       product_image_url,
-      listing_status,
     })
     res.status(200).json({ message: 'Product updated successfully' })
   } catch (error) {
