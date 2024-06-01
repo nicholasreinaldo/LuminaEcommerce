@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 // Importing all routers from the routes folder
 const indexRouter = require('./server/src/routes/routes.index')
-const loginRouter = require('/server/src/routes/routes.login')
+const loginRouter = require('./server/src/routes/routes.login')
 const usersRouter = require('./server/src/routes/routes.users')
 const adminRouter = require('./server/src/routes/routes.admin')
 const productsRouter = require('./server/src/routes/routes.products')
