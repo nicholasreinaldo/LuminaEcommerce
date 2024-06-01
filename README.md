@@ -1,6 +1,7 @@
 # Lumina E-Commerce Website
 
 Welcome to Lumina, an e-commerce platform designed to provide a seamless skin care products shopping experience for users and robust management capabilities for admins. 
+<br/>
 This website is designed for Binar Academy Gold Challenge level project which features admin-side features to login, register, and product management, in which customer-side features is not implemented yet for the Gold Challenge.
 
 ## Table of Contents
