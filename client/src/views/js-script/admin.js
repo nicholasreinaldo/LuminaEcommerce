@@ -4,6 +4,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
   }
 
+  const showMessage = (message, type) => {
+    const messageContainer = document.createElement('div')
+    messageContainer.className = `message ${type}`
+    messageContainer.textContent = message
+    document.body.appendChild(messageContainer)
+    setTimeout(() => {
+      messageContainer.remove()
+    }, 3000)
+  }
+
   const handleEditProduct = async (event) => {
     let productId = event.target.getAttribute('data-id')
     if (!productId && event.target.parentElement) {
@@ -50,6 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         method: 'DELETE',
       })
       if (response.ok) {
+        showMessage('Product deleted successfully', 'success')
         await fetchProducts()
       } else {
         console.error('Error deleting product:', response.statusText)
@@ -78,6 +89,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!response.ok) {
         console.error('Error updating listing status:', response.statusText)
       } else {
+        showMessage('Listing status updated successfully', 'success')
         const productRow = document.querySelector(`tr[data-id="${productId}"]`)
         const switchLabelOn = productRow.querySelector('.switch-label.on')
         const switchLabelOff = productRow.querySelector('.switch-label.off')
@@ -181,6 +193,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         body: JSON.stringify(productData),
       })
       if (response.ok) {
+        showMessage('Product added successfully', 'success')
         await fetchProducts() // Re-fetch products after adding a new one
         addProductForm.reset()
         document.getElementById('addProductModal').style.display = 'none'
@@ -213,6 +226,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         body: JSON.stringify(productData),
       })
       if (response.ok) {
+        showMessage('Product edited successfully', 'success')
         await fetchProducts()
         editProductForm.reset()
         document.getElementById('editProductModal').style.display = 'none'
@@ -229,6 +243,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('addProductModal').style.display = 'none'
   })
 
+  const cancelAddProductModal = document.querySelector(
+    '#addProductModal .cancel',
+  )
+  cancelAddProductModal.addEventListener('click', () => {
+    document.getElementById('addProductModal').style.display = 'none'
+  })
+
   const openAddProductModalButton = document.getElementById(
     'openAddProductModal',
   )
@@ -240,6 +261,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     '#editProductModal .close',
   )
   closeEditProductModal.addEventListener('click', () => {
+    document.getElementById('editProductModal').style.display = 'none'
+  })
+
+  const cancelEditProductModal = document.querySelector(
+    '#editProductModal .cancel',
+  )
+  cancelEditProductModal.addEventListener('click', () => {
     document.getElementById('editProductModal').style.display = 'none'
   })
 
