@@ -99,37 +99,37 @@ document.addEventListener('DOMContentLoaded', async () => {
       products.forEach((product) => {
         const productRow = document.createElement('tr')
         productRow.innerHTML = `
-        <td>${product.brand_name}</td>
-        <td>${product.product_name}</td>
-        <td>${product.stock_amount}</td>
-        <td>${formatPrice(product.product_price)}</td>
-        <td><img src="/src/assets/product-images/${
-          product.product_image_url
-        }" alt="${
+          <td>${product.brand_name}</td>
+          <td>${product.product_name}</td>
+          <td>${product.stock_amount}</td>
+          <td>${formatPrice(product.product_price)}</td>
+          <td><img src="/src/assets/product-images/${
+            product.product_image_url
+          }" alt="${
           product.product_name
         }" style="width: 50px; height: auto;" /></td>
-        <td>
-          <div class="modify-buttons">
-            <label class="toggle-switch">
-              <input type="checkbox" data-id="${
-                product.id
-              }" class="listing-status" ${
+          <td>
+            <div class="modify-buttons">
+              <label class="toggle-switch">
+                <input type="checkbox" data-id="${
+                  product.id
+                }" class="listing-status" ${
           product.listing_status ? 'checked' : ''
         } />
-              <span class="slider">
-                <span class="switch-label">${
-                  product.listing_status ? 'On' : 'Off'
-                }</span>
-              </span>
-            </label>
-            <button data-id="${
-              product.id
-            }" class="edit-btn"><i class="fas fa-edit"></i></button>
-            <button data-id="${
-              product.id
-            }" class="delete-btn"><i class="fa fa-trash"></i></button>
-          </div>
-        </td>
+                <span class="slider">
+                  <span class="switch-label">${
+                    product.listing_status ? 'On' : 'Off'
+                  }</span>
+                </span>
+              </label>
+              <button data-id="${
+                product.id
+              }" class="edit-btn"><i class="fas fa-edit"></i></button>
+              <button data-id="${
+                product.id
+              }" class="delete-btn"><i class="fa fa-trash"></i></button>
+            </div>
+          </td>
         `
         productTableBody.appendChild(productRow)
       })
@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       document.querySelectorAll('.delete-btn').forEach((button) => {
         button.addEventListener('click', handleDeleteProduct)
       })
-      document.querySelectorAll('.listing-status').forEach((select) => {
-        select.addEventListener('change', handleListingStatusChange)
+      document.querySelectorAll('.listing-status').forEach((checkbox) => {
+        checkbox.addEventListener('change', handleListingStatusChange)
       })
     } catch (error) {
       console.error('Error fetching products:', error)
