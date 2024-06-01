@@ -1,5 +1,3 @@
-// /server/src/controllers/controller.admin.js
-
 const knex = require('../../../db')
 
 exports.createProduct = async (req, res) => {
