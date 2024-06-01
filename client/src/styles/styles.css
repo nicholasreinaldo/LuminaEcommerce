@@ -132,7 +132,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 50px;
-  column-gap: 24px;
+  padding-left: 30px;
+  column-gap: 15px;
 }
 
 /* Basic styling for product cards */
