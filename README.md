@@ -15,7 +15,7 @@ This website is designed for Binar Academy Gold Challenge level project which fe
 ## Features
 
 ### Admin Features
-- **Admin Login**: Admins can log in to the admin dashboard.
+- **Admin Login**: Admins can log in and register to the admin dashboard (currently there is only admin role implemented).
 - **Product Management**: Admins can add, update, or delete products from the catalog.
 
 ## Installation
