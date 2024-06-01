@@ -417,7 +417,8 @@ body {
 }
 
 .modify-buttons button i {
-  font-size: 16px;
+  font-size: 18px;
+  color: white;
 }
 
 /* Edit button Modal styling */
