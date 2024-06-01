@@ -511,7 +511,24 @@ input:checked + .slider:before {
 }
 
 .switch-label.off {
-  right: 10px;
+  left: 30px;
+}
+
+/* Hide the label text based on the state of the switch */
+input:checked + .slider .switch-label.on {
+  display: block;
+}
+
+input:checked + .slider .switch-label.off {
+  display: none;
+}
+
+input:not(:checked) + .slider .switch-label.on {
+  display: none;
+}
+
+input:not(:checked) + .slider .switch-label.off {
+  display: block;
 }
 
 /* Edit button Modal styling */

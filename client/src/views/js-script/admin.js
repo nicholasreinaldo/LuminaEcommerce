@@ -110,18 +110,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         }" style="width: 50px; height: auto;" /></td>
           <td>
             <div class="modify-buttons">
-              <label class="toggle-switch">
-                <input type="checkbox" data-id="${
-                  product.id
-                }" class="listing-status" ${
-          product.listing_status ? 'checked' : ''
-        } />
-                <span class="slider">
-                  <span class="switch-label">${
-                    product.listing_status ? 'ON' : 'OFF'
-                  }</span>
-                </span>
-              </label>
+            <label class="toggle-switch">
+            <input
+              type="checkbox"
+              data-id="${product.id}"
+              class="listing-status"
+              ${product.listing_status ? 'checked' : ''}
+            />
+            <span class="slider">
+              <span class="switch-label on">ON</span>
+              <span class="switch-label off">OFF</span>
+            </span>
+          </label>
+          
               <button data-id="${
                 product.id
               }" class="edit-btn"><i class="fas fa-edit"></i></button>
