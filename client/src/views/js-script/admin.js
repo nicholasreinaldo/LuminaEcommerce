@@ -56,6 +56,31 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Error deleting product:', error)
     }
   }
+  const handleListingStatusChange = async (event) => {
+    const productId = event.target.getAttribute('data-id')
+    const newStatus = event.target.value === 'true'
+
+    try {
+      const response = await fetch(
+        `/api/admin/products/${productId}/listing-status`,
+        {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ listing_status: newStatus }),
+        },
+      )
+
+      if (!response.ok) {
+        console.error('Error updating listing status:', response.statusText)
+      } else {
+        await fetchProducts()
+      }
+    } catch (error) {
+      console.error('Error updating listing status:', error)
+    }
+  }
 
   const fetchProducts = async () => {
     try {
@@ -103,6 +128,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       })
       document.querySelectorAll('.delete-btn').forEach((button) => {
         button.addEventListener('click', handleDeleteProduct)
+      })
+      document.querySelectorAll('select[data-id]').forEach((select) => {
+        select.addEventListener('change', handleListingStatusChange)
       })
     } catch (error) {
       console.error('Error fetching products:', error)
