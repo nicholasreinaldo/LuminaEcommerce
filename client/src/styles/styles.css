@@ -632,3 +632,25 @@ input:not(:checked) + .slider .switch-label.off {
   display: flex;
   justify-content: center;
 }
+
+/* Product deletion modal styling*/
+
+.confirm-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+}
