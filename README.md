@@ -2,14 +2,13 @@
 
 Welcome to Lumina, an e-commerce platform designed to provide a seamless skin care products shopping experience for users and robust management capabilities for admins.
 
-This website is designed for Binar Academy Gold Challenge level project which features admin-side features to login, register, and product management, in which customer-side features is not implemented yet for the Gold Challenge.
+This website is designed for Binar Academy Gold Challenge level project which features admin-side product listing management.
 
 ## Table of Contents
 
 - [Features](#features)
   - [Admin Features](#admin-features)
 - [Installation](#installation)
--
 - [Admin Guideline](#admin-guideline)
   - [Admin Login](#admin-login)
   - [Product Management](#product-management)
@@ -17,10 +16,10 @@ This website is designed for Binar Academy Gold Challenge level project which fe
 
 ## Features
 
-### Admin Features
-
-- **Admin Login**: Admins can log in and register to the admin dashboard (currently there is only admin role implemented).
-- **Product Management**: Admins can add, update, or delete products from the catalog to display it to the home page "ALL PRODUCTS" section.
+### Product Management Features
+- **Add Product Listing**: Admins can add products from the catalog to display it to the home page "ALL PRODUCTS" section.
+- **Edit Product Details**: Admins can update product details from the catalog to change its' contents it at the home page "ALL PRODUCTS" section.
+- **Delete Product Listing**: Admins can delete products from the catalog to undisplay it from the home page "ALL PRODUCTS" section.
 
 ## Installation
 
@@ -35,10 +34,23 @@ To set up the Lumina website on your local machine, follow these steps:
 
 2. **Install dependencies**
    ```bash
-   npm install ejs express knex pg
+   npm init
+   npm install node
+   node index.js
+   npm install  ejs express knex pg
    npm install -D nodemon
    ```
-3. **Start the Application**
+3. **Setup the database**
+   As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
+   Make sure your database connection  details, replace the details according to your database credentials.
+   ``` root/knexfile.js
+      connection: {
+      host: '127.0.0.1',
+      port: 5432,
+      database: 'your-database-name',
+      user: 'postgres',
+      password: 'your-database-password',
+5. **Start the Application**
    ```bash
    npm run start
    ```
