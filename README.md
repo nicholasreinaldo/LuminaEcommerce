@@ -110,7 +110,7 @@ Notes:
 
 ## Data samples
 You can use these datas for testing purposes. You can use also your own datas.
-<br/>*Image file is already uploaded in the repository, if you want to add your own image you can upload it as explained in the Add Product guideline section.
+<br/>*Image files below is already uploaded in the repository, if you want to add your own image you can upload it as explained in the Add Product guideline section.
 | No | Brand     | Product name                              | Stock | Price          | Image file name      |
 |----|-----------|-------------------------------------------|-------|----------------|----------------------|
 | 1  | SKINTIFIC | 10% Vitamin C Brightening Glow Serum      | 7     |         143000 | product-image-17.png |
