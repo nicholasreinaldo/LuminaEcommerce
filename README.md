@@ -20,6 +20,7 @@ Customers can see at the home page of the website all products listed available 
 ### Product Management Features
 - **See All Product Listing**: Admins can view all products from the catalog which displayed in the home page "ALL PRODUCT" section.
 - **Add Product Listing**: Admins can add products from the catalog to display it to the home page "ALL PRODUCTS" section.
+- **Toggle Product Listing**: Admins can toggle product displayed from the catalog to turn the display on or off in the home page "ALL PRODUCTS" section.
 - **Edit Product Details**: Admins can update product details from the catalog to change its' contents it at the home page "ALL PRODUCTS" section.
 - **Delete Product Listing**: Admins can delete products from the catalog to undisplay it from the home page "ALL PRODUCTS" section.
 
@@ -99,15 +100,30 @@ To set up the Lumina website on your local machine, follow these steps:
 
 ## Product Management Guideline
 ### Add Product
-1. 
+1. Access the admin dashboard
+2. Click the "Add New" icon button at the top right corner
+3. Add the products' Brand Name, Product Name, Stock Amount, Price, and Image File Name
+4. Click "Add Product"
 Notes:
-* Product image uploading still need a manual process adding it to the file directory. In the dashboard type the name file instead (e.g. product-image-1.png)
+* Product image uploading still need a manual process adding it to the file directory. In this dashboard type the name file instead (e.g. product-image-1.png)
 * Image directory is at
    ```root/client/assets/product-images
+
+### Toggle Product Display
+1. Access The Admin Dashboard
+2. Click the Toggle button (Green/Gray) in the 'Modify' column of the product rows you want to toggle.
+
 ### Edit Product
+1. Access the Admin Dashboard
+2. Click the Edit icon (Blue color) in the 'Modify' column of the product rows you want to edit.
+3. Modify and adjust the datas as you want
+4. Click "Save Changes"
 
 ### Delete Product
-
+1. Access the Admin Dashboard
+2. Click the Delete icon (Red color) in the 'Modify' column of the product rows you want to delete.
+3. Click confirmation button "Delete"
+   
 ## Data samples
 You can use these datas for testing purposes. You can use also your own datas.
 <br/>*Image files below is already uploaded in the repository, if you want to add your own image you can upload it as explained in the Add Product guideline section.
