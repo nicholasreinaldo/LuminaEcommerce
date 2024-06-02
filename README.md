@@ -108,5 +108,15 @@ Notes:
 
 ### Delete Product
 
-## Database Samples
-You can use these datas for testing purposes. Other than that, you can use your own datas.
+## Data samples
+You can use these datas for testing purposes. You can use your own datas.
+| No | Brand     | Product name                              | Stock | Price          | Image file name      |
+|----|-----------|-------------------------------------------|-------|----------------|----------------------|
+| 1  | SKINTIFIC | 10% Vitamin C Brightening Glow Serum      | 7     |         143000 | product-image-17.png |
+| 2  | SKINTIFIC | Aqua Light Daily Sunscreen SPF 35 PA +++  | 10    |          88000 | product-image-18.png |
+| 3  | SKINTIFIC | Symwhite 377 Dark Spot Moisture Gel       | 5     |         138000 | product-image-19.png |
+| 4  | SKINTIFIC | SymWhite 377 Dark Spot Eraser Serum       | 5     |         131000 | product-image-20.png |
+| 5  | COSRX     | Pure Fit Cica Cleanser                    | 2     |         174000 | product-image-21.png |
+| 6  | COSRX     | Aloe Soothing Sun Cream SPF 50+ PA+++     | 5     |         149000 | product-image-22.jpg |
+| 7  | AZARINE   | Hydracool Ceraspray Sunscreen SPF50 PA+++ | 7     |          65000 | product-image-23.png |
+| 8  | AZARINE   | Acne Spot Serum                           | 13    |          25000 | product-image-24.png |
