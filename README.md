@@ -31,15 +31,12 @@ To set up the Lumina website on your local machine, follow these steps:
 
    ```bash
    git clone https://github.com/nicholasreinaldo/24001107-44-Nir-Lumina-ChallengeGold
-
+   cd 24001107-44-Nir-Lumina-ChallengeGold
    ```
 
 2. **Install dependencies**
    ```bash
-   npm init
-   npm install node ejs express knex pg
-   npm install -D nodemon
-   node index.js
+   npm install
    ```
 3. **Connect the database**
    <br/>As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
