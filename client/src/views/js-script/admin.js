@@ -1,8 +1,9 @@
-// client/src/views/js-script/admin.js
 document.addEventListener('DOMContentLoaded', async () => {
   function formatPrice(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
   }
+
+  let productIdToDelete = null
 
   const handleEditProduct = async (event) => {
     let productId = event.target.getAttribute('data-id')
@@ -35,18 +36,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  const handleDeleteProduct = async (event) => {
-    let productId = event.target.getAttribute('data-id')
-    if (!productId && event.target.parentElement) {
-      productId = event.target.parentElement.getAttribute('data-id')
+  const handleDeleteProduct = (event) => {
+    productIdToDelete = event.target.getAttribute('data-id')
+    if (!productIdToDelete && event.target.parentElement) {
+      productIdToDelete = event.target.parentElement.getAttribute('data-id')
     }
-    if (!productId) {
+    if (!productIdToDelete) {
       console.error('No product ID found for deleting')
+      return
+    }
+    document.getElementById('deleteConfirmationModal').style.display = 'block'
+  }
+
+  const confirmDeleteProduct = async () => {
+    if (!productIdToDelete) {
+      console.error('No product ID found for confirming deletion')
       return
     }
 
     try {
-      const response = await fetch(`/api/admin/products/${productId}`, {
+      const response = await fetch(`/api/admin/products/${productIdToDelete}`, {
         method: 'DELETE',
       })
       if (response.ok) {
@@ -56,7 +65,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     } catch (error) {
       console.error('Error deleting product:', error)
+    } finally {
+      productIdToDelete = null
+      document.getElementById('deleteConfirmationModal').style.display = 'none'
     }
+  }
+
+  const cancelDeleteProduct = () => {
+    productIdToDelete = null
+    document.getElementById('deleteConfirmationModal').style.display = 'none'
   }
 
   const handleListingStatusChange = async (event) => {
@@ -250,5 +267,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (event.target === document.getElementById('editProductModal')) {
       document.getElementById('editProductModal').style.display = 'none'
     }
+    if (event.target === document.getElementById('deleteConfirmationModal')) {
+      document.getElementById('deleteConfirmationModal').style.display = 'none'
+    }
   })
+
+  document
+    .getElementById('confirmDelete')
+    .addEventListener('click', confirmDeleteProduct)
+  document
+    .getElementById('cancelDelete')
+    .addEventListener('click', cancelDeleteProduct)
 })
