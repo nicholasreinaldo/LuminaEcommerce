@@ -41,7 +41,7 @@ To set up the Lumina website on your local machine, follow these steps:
    npm install -D nodemon
    ```
 3. **Setup the database**
-   As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
+   </br>As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
    Make sure your database connection  details, replace the details according to your database credentials.
    Modify the content of root/knexfile.js
    ``` 
