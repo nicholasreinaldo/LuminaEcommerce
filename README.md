@@ -66,7 +66,7 @@ To set up the Lumina website on your local machine, follow these steps:
    );
 
 6. **Insert template database values into the table**
-   <br/>This is optional, but you can use this as a starting point for the product list.
+   <br/>Use this query as a starting point datas for the product list.
    ```
    INSERT INTO products (brand_name, product_name, product_price, product_image_url, stock_amount, listing_status)
    VALUES 
@@ -91,13 +91,19 @@ To set up the Lumina website on your local machine, follow these steps:
    ```bash
    npm run start
    ```
+   
+8. **Access the Home Page and Admin dashboard**
+   You can access the website by accessing your local host:
+   1. Home Page: http://localhost:3000/
+   2. Admin Dashboard: http://localhost:3000/admin
 
 ## Product Management Guideline
 ### Add Product
 1. 
 Notes:
 * Product image uploading still need a manual process adding it to the file directory. In the dashboard type the name file instead (e.g. product-image-1.png)
-* Image files is at root/client/assets/product-images
+* Image directory is at
+   ```root/client/assets/product-images
 ### Edit Product
 
 ### Delete Product
