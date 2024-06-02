@@ -7,8 +7,6 @@ const port = process.env.PORT || 3000
 
 // Importing all routers from the routes folder
 const indexRouter = require('./server/src/routes/routes.index')
-const loginRouter = require('./server/src/routes/routes.login')
-const usersRouter = require('./server/src/routes/routes.users')
 const adminRouter = require('./server/src/routes/routes.admin')
 const productsRouter = require('./server/src/routes/routes.products')
 
@@ -20,8 +18,6 @@ app.use(express.urlencoded({ extended: true }))
 
 /* Using all routers */
 app.use('/', indexRouter)
-app.use('/login', loginRouter)
-app.use('/user', usersRouter)
 app.use('/api', productsRouter)
 app.use('/admin', adminRouter)
 app.use('/api/admin', adminRouter)
