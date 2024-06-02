@@ -102,7 +102,7 @@ To set up the Lumina website on your local machine, follow these steps:
 2. Click the "Add New" icon button at the top right corner
 3. Add the products' Brand Name, Product Name, Stock Amount, Price, and Image File Name
 4. Click "Add Product"
-Notes:
+<br/> Additional Notes for image data:
 * Product image uploading still need a manual process adding it to the file directory. In this dashboard type the name file instead (e.g. product-image-1.png)
 * Image directory is at root/client/assets/product-images
 
