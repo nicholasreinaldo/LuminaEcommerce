@@ -53,6 +53,7 @@ To set up the Lumina website on your local machine, follow these steps:
      password: 'your-database-password',
    }
 4. **Setup the database table**
+   <br/>Use this query to setup the products database table
    ```
    CREATE TABLE products (
     id SERIAL PRIMARY KEY,
@@ -64,8 +65,8 @@ To set up the Lumina website on your local machine, follow these steps:
     listing_status BOOLEAN NOT NULL DEFAULT TRUE
    );
 
-5. **Insert template database values into the table**
-   This is optional, but you can use this as a starting point for the product list.
+6. **Insert template database values into the table**
+   <br/>This is optional, but you can use this as a starting point for the product list.
    ```
    INSERT INTO products (brand_name, product_name, product_price, product_image_url, stock_amount, listing_status)
    VALUES 
