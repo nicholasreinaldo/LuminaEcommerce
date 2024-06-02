@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: tahoma;
+  font-family: Tahoma;
   color: var(--text-color);
 }
 
@@ -23,7 +23,7 @@ header {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  top: 0px;
+  top: 0;
   border-bottom: 2px solid lightgray;
   z-index: 1;
 }
@@ -119,13 +119,7 @@ body {
   background: var(--warm-pink);
 }
 
-.about-us {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-
-/* Product card section*/
-
+/* Product card section */
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -171,10 +165,10 @@ body {
   cursor: pointer;
 }
 
-/* About us section */
-
+/* About Us section */
 .about-us {
-  padding-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .about-us-container {
@@ -257,8 +251,7 @@ body {
   font-size: 24px;
 }
 
-/* Login and Register styling section */
-
+/* Login and Register styling section, Currently unused */
 .login-register-container {
   padding: 165px 150px 173px 150px;
   display: flex;
@@ -292,11 +285,11 @@ body {
 .email-input,
 .password-input {
   border: 1px solid gray;
-  border-radius: 0px;
+  border-radius: 0;
   padding: 0 15px;
   height: 40px;
   width: 85%;
-  margin: 5px 0px;
+  margin: 5px 0;
 }
 
 .login-register-button {
@@ -321,9 +314,8 @@ body {
 }
 
 /* Admin Page styling section */
-
 .admin-menus {
-  padding: 80px 150px 80px 150px;
+  padding: 80px 150px;
   display: flex;
 }
 
@@ -337,6 +329,7 @@ body {
   padding-bottom: 10px;
 }
 
+/* Add Product Button */
 .add-product {
   padding-bottom: 10px;
   display: flex;
@@ -370,6 +363,7 @@ body {
   background-color: #2e6930;
 }
 
+/* Products Table */
 .products-table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -410,6 +404,7 @@ body {
   color: white;
 }
 
+/* Modify Button */
 .modify-buttons {
   display: flex;
   gap: 5px;
@@ -463,8 +458,7 @@ body {
   background-color: rgb(105, 25, 25);
 }
 
-/* Toggle switch styling */
-
+/* Toggle switch */
 .toggle-switch {
   position: relative;
   width: 60px;
@@ -537,7 +531,6 @@ input:checked + .slider:before {
   left: 11px;
 }
 
-/* Hide the label text based on the state of the switch */
 input:checked + .slider .switch-label.on {
   display: block;
 }
@@ -599,7 +592,7 @@ input:not(:checked) + .slider .switch-label.off {
 }
 
 .modal-title {
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0 20px;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -607,7 +600,7 @@ input:not(:checked) + .slider .switch-label.off {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto 15% auto;
+  margin: 10% auto 15%;
   padding: 30px;
   border: 1px solid #888;
   width: 600px;
@@ -646,7 +639,7 @@ input:not(:checked) + .slider .switch-label.off {
 }
 
 .submit-button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -664,8 +657,7 @@ input:not(:checked) + .slider .switch-label.off {
   justify-content: center;
 }
 
-/* Product deletion modal styling*/
-
+/* Product deletion modal styling */
 .confirm-btn,
 .cancel-btn {
   color: white;
