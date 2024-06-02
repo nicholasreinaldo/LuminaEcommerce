@@ -30,7 +30,7 @@ To set up the Lumina website on your local machine, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/nicholasreinaldo/24001107-44-Nir-Lumina-ChallengeGold
+   git clone https://github.com/nicholasreinaldo/24001157-44-Nir-Lumina-ChallengeGold
    cd 24001107-44-Nir-Lumina-ChallengeGold
    ```
 
