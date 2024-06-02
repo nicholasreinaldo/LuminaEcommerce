@@ -1,4 +1,4 @@
-// /client/views/js-script/products.js
+// /client/views/js-script/index.js
 
 document.addEventListener('DOMContentLoaded', async () => {
   function formatPrice(number) {
