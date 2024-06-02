@@ -4,8 +4,6 @@ Welcome to Lumina, an e-commerce platform designed to provide a seamless skin ca
 
 This website is designed for Binar Academy Gold Challenge level project which features customer-side product listing and admin-side product listing management.
 
-## Product Demo
-
 ## Table of Contents
 
 - [Features](#features)
