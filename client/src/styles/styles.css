@@ -651,3 +651,14 @@ input:not(:checked) + .slider .switch-label.off {
 .cancel-btn {
   background-color: #a5a5a5;
 }
+
+#deleteConfirmationModal p {
+  text-align: center;
+}
+
+.submit-two-button-div {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
