@@ -39,9 +39,8 @@ To set up the Lumina website on your local machine, follow these steps:
    node index.js
    ```
 3. **Connect the database**
-   </br>As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
-   </br>Make sure your database connection  details and replace the content of root/knexfile.js according to your database credentials.
-   
+   As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
+   Make sure your database connection  details and replace the content of root/knexfile.js according to your database credentials.  
    ``` 
    connection: {
      host: '127.0.0.1',
@@ -50,36 +49,20 @@ To set up the Lumina website on your local machine, follow these steps:
      user: 'postgres',
      password: 'your-database-password',
    }
-4. **
-   </br> This query is to 
+5. **Setup the database table**
+   Use this query to make t
    ```
+7. **Insert template database values into the table**
    
-6. **Start the Application**
+9. **Start the Application**
    ```bash
    npm run start
    ```
 
-## Admin Guideline
-
-### Admin Register
-
-### Admin Login
-
+## Product Management Guideline
 ### Add Product
 
 ### Edit Product
 
 ### Delete Product
 
-## Feature updates plan (After Gold Challenge)
-
-### Admin Features
-
-- **Order Management**: Admins can view orders and change the status of product orders (confirmed, on-process, delivered).
-
-### Upcoming User Features
-
-- **User Registration and Login**: Users can register for a new account or log in to an existing account.
-- **Add to Cart**: Users can add products to their shopping cart.
-- **Checkout**: Users can review their cart and proceed to checkout to complete their purchase.
-- **Order History**: Users can view their past orders and order status.
