@@ -97,7 +97,7 @@ To set up the Lumina website on your local machine, follow these steps:
    2. Admin Dashboard: http://localhost:3000/admin
 
 ## Product Management Guideline
-### Add Product
+### :heavy_plus_sign: Add Product
 1. Access the admin dashboard
 2. Click the "Add New" icon button at the top right corner
 3. Add the products' Brand Name, Product Name, Stock Amount, Price, and Image File Name
