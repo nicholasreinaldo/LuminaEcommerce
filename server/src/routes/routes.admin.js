@@ -16,7 +16,7 @@ router.delete('/products/:id', adminController.deleteProduct)
 // Route to update a product
 router.put('/products/:id', adminController.updateProduct)
 
-// Route to update tweak listing status
+// Route to update listing status
 router.put('/products/:id/listing-status', adminController.updateListingStatus)
 
 module.exports = router
