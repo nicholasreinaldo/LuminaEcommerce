@@ -3,6 +3,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
   }
 
+  function showNotification(message) {
+    const notification = document.getElementById('notification')
+    const notificationMessage = document.getElementById('notification-message')
+    notificationMessage.textContent = message
+    notification.style.display = 'block'
+
+    setTimeout(() => {
+      notification.style.display = 'none'
+    }, 3000)
+  }
+
+  function closeNotification() {
+    const notification = document.getElementById('notification')
+    notification.style.display = 'none'
+  }
+
   let productIdToDelete = null
 
   const handleEditProduct = async (event) => {
