@@ -559,7 +559,7 @@ input:not(:checked) + .slider .switch-label.off {
   display: none;
   position: fixed;
   top: 60px;
-  right: 100px;
+  right: 150px;
   background-color: #d4edda;
   color: #155724;
   border: 1px solid #c3e6cb;
