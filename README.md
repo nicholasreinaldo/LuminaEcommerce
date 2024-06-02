@@ -7,11 +7,8 @@ This website is designed for Binar Academy Gold Challenge level project which fe
 ## Table of Contents
 
 - [Features](#features)
-  - [Admin Features](#admin-features)
 - [Installation](#installation)
-- [Admin Guideline](#admin-guideline)
-  - [Product Management](#product-management)
-- [Feature updates plan](#feature-updates-plan)
+- [Product Management Feature Guideline](#product-guideline)
 
 ## Features
 
@@ -49,20 +46,26 @@ To set up the Lumina website on your local machine, follow these steps:
      user: 'postgres',
      password: 'your-database-password',
    }
-5. **Setup the database table**
-   Use this query to make t
+4. **Setup the database table**
    ```
-7. **Insert template database values into the table**
    
-9. **Start the Application**
+5. **Insert template database values into the table**
+   This is optional, but you can use this as a starting point for the product list.
+   ```
+   
+7. **Start the Application**
    ```bash
    npm run start
    ```
 
 ## Product Management Guideline
 ### Add Product
-
+1. 
+* Product image uploading still need a manual process adding it to the file directory. In the dashboard type the name file instead (e.g. product-image-1.png)
+** Image files is at root/client/assets/product-images
 ### Edit Product
 
 ### Delete Product
 
+## Database Samples
+You can use these datas for testing purposes. Other than that, you can use your own datas.
