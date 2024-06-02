@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await fetchProducts()
         editProductForm.reset()
         document.getElementById('editProductModal').style.display = 'none'
-        showNotification('Changes saved to Product')
+        showNotification('Product changes saved')
       } else {
         console.error('Error editing product:', response.statusText)
       }
