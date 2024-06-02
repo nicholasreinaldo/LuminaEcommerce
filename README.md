@@ -38,7 +38,7 @@ To set up the Lumina website on your local machine, follow these steps:
    node index.js
    ```
 3. **Connect the database**
-   As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
+   <br/>As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
    Make sure your database connection  details and replace the content of root/knexfile.js according to your database credentials.  
    ``` 
    connection: {
