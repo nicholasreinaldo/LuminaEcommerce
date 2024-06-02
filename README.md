@@ -107,17 +107,17 @@ To set up the Lumina website on your local machine, follow these steps:
 * Product image uploading still need a manual process adding it to the file directory. In this dashboard type the name file instead (e.g. product-image-1.png)
 * Image directory is at root/client/assets/product-images
 
-### Toggle Product Display
+### :arrows_counterclockwise: Toggle Product Display
 1. Access The Admin Dashboard
 2. Click the Toggle button (Green/Gray) in the 'Modify' column of the product rows you want to toggle.
 
-### Edit Product
+### :pencil: Edit Product
 1. Access the Admin Dashboard
 2. Click the Edit icon (Blue color) in the 'Modify' column of the product rows you want to edit.
 3. Modify and adjust the datas as you want
 4. Click "Save Changes"
 
-### Delete Product
+### :heavy_minus_sign: Delete Product
 1. Access the Admin Dashboard
 2. Click the Delete icon (Red color) in the 'Modify' column of the product rows you want to delete.
 3. Click confirmation button "Delete"
