@@ -106,8 +106,7 @@ To set up the Lumina website on your local machine, follow these steps:
 4. Click "Add Product"
 Notes:
 * Product image uploading still need a manual process adding it to the file directory. In this dashboard type the name file instead (e.g. product-image-1.png)
-* Image directory is at
-   ```root/client/assets/product-images
+* Image directory is at root/client/assets/product-images
 
 ### Toggle Product Display
 1. Access The Admin Dashboard
