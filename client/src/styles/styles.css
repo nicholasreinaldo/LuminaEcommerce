@@ -554,6 +554,35 @@ input:not(:checked) + .slider .switch-label.off {
   display: block;
 }
 
+/* Notification pop up styling */
+.notification {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.notification .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.notification .icon {
+  margin-right: 10px;
+}
+
 /* Edit and Add product Modal styling */
 .modal {
   display: none;
