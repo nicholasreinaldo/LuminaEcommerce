@@ -8,7 +8,8 @@ This website is designed for Binar Academy Gold Challenge level project which fe
 
 - [Features](#features)
 - [Installation](#installation)
-- [Product Management Feature Guideline](#product-guideline)
+- [Product Management Guideline](#product-management-guideline)
+- [Data Samples](#data-samples)
 
 ## Features
 
