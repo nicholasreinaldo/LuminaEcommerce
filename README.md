@@ -4,6 +4,8 @@ Welcome to Lumina, an e-commerce platform designed to provide a seamless skin ca
 
 This website is designed for Binar Academy Gold Challenge level project which features admin-side product listing management.
 
+## Product Demo
+
 ## Table of Contents
 
 - [Features](#features)
@@ -61,8 +63,9 @@ To set up the Lumina website on your local machine, follow these steps:
 ## Product Management Guideline
 ### Add Product
 1. 
+Notes:
 * Product image uploading still need a manual process adding it to the file directory. In the dashboard type the name file instead (e.g. product-image-1.png)
-** Image files is at root/client/assets/product-images
+* Image files is at root/client/assets/product-images
 ### Edit Product
 
 ### Delete Product
