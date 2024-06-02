@@ -2,7 +2,7 @@
 
 Welcome to Lumina, an e-commerce platform designed to provide a seamless skin care products shopping experience for users and robust management capabilities for admins.
 
-This website is designed for Binar Academy Gold Challenge level project which features admin-side product listing management.
+This website is designed for Binar Academy Gold Challenge level project which features customer-side product listing and admin-side product listing management.
 
 ## Product Demo
 
@@ -14,7 +14,11 @@ This website is designed for Binar Academy Gold Challenge level project which fe
 
 ## Features
 
+### Product Listings
+Customers can see at the home page of the website all products listed available for sale.
+
 ### Product Management Features
+- **See All Product Listing**: Admins can view all products from the catalog which displayed in the home page "ALL PRODUCT" section.
 - **Add Product Listing**: Admins can add products from the catalog to display it to the home page "ALL PRODUCTS" section.
 - **Edit Product Details**: Admins can update product details from the catalog to change its' contents it at the home page "ALL PRODUCTS" section.
 - **Delete Product Listing**: Admins can delete products from the catalog to undisplay it from the home page "ALL PRODUCTS" section.
