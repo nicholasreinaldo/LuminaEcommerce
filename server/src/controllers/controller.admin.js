@@ -1,5 +1,4 @@
-// server/controllers/controller.admin.js
-const knex = require('../../../db')
+const Product = require('../models/model.product')
 
 exports.createProduct = async (req, res) => {
   const {
@@ -11,7 +10,7 @@ exports.createProduct = async (req, res) => {
   } = req.body
 
   try {
-    await knex('products').insert({
+    await Product.createProduct({
       brand_name,
       product_name,
       stock_amount,
@@ -28,7 +27,7 @@ exports.createProduct = async (req, res) => {
 exports.deleteProduct = async (req, res) => {
   const { id } = req.params
   try {
-    await knex('products').where({ id }).del()
+    await Product.deleteProduct(id)
     res.status(200).json({ message: 'Product deleted successfully' })
   } catch (error) {
     console.error(error)
@@ -47,7 +46,7 @@ exports.updateProduct = async (req, res) => {
   } = req.body
 
   try {
-    await knex('products').where({ id }).update({
+    await Product.updateProduct(id, {
       brand_name,
       product_name,
       stock_amount,
@@ -69,7 +68,7 @@ exports.updateListingStatus = async (req, res) => {
   const status = listing_status === 'true' || listing_status === true
 
   try {
-    await knex('products').where({ id }).update({ listing_status: status })
+    await Product.updateListingStatus(id, status)
     res.status(200).json({ message: 'Listing status updated successfully' })
   } catch (error) {
     console.error(error)
