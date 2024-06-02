@@ -571,12 +571,14 @@ input:not(:checked) + .slider .switch-label.off {
 }
 
 .notification .close {
-  position: absolute;
-  top: 5px;
-  right: 10px;
   cursor: pointer;
   font-size: 18px;
-  line-height: 1;
+  margin-left: 15px; /* Add some gap between the text and the close button */
+}
+
+.notification .message {
+  display: flex;
+  align-items: center;
 }
 
 .notification .icon {
