@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     setTimeout(() => {
       notification.style.display = 'none'
-    }, 3000)
+    }, 5000)
   }
 
   function closeNotification() {
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       })
       if (response.ok) {
         await fetchProducts()
+        showNotification('Product has been removed')
       } else {
         console.error('Error deleting product:', response.statusText)
       }
@@ -217,6 +218,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await fetchProducts() // Re-fetch products after adding a new one
         addProductForm.reset()
         document.getElementById('addProductModal').style.display = 'none'
+        showNotification('New product created')
       } else {
         console.error('Error adding product:', response.statusText)
       }
@@ -249,6 +251,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await fetchProducts()
         editProductForm.reset()
         document.getElementById('editProductModal').style.display = 'none'
+        showNotification('Changes saved to Product')
       } else {
         console.error('Error editing product:', response.statusText)
       }
@@ -294,4 +297,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document
     .getElementById('cancelDelete')
     .addEventListener('click', cancelDeleteProduct)
+
+  window.closeNotification = closeNotification
 })
