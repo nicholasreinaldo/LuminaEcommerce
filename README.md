@@ -50,11 +50,38 @@ To set up the Lumina website on your local machine, follow these steps:
    }
 4. **Setup the database table**
    ```
-   
+   CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    brand_name VARCHAR(255) NOT NULL,
+    product_name VARCHAR(255) NOT NULL,
+    product_price DECIMAL(10, 2) NOT NULL,
+    product_image_url VARCHAR(255) NOT NULL,
+    stock_amount INT NOT NULL,
+    listing_status BOOLEAN NOT NULL DEFAULT TRUE
+   );
+
 5. **Insert template database values into the table**
    This is optional, but you can use this as a starting point for the product list.
    ```
-   
+   INSERT INTO products (brand_name, product_name, product_price, product_image_url, stock_amount, listing_status)
+   VALUES 
+   ('SKINTIFIC', 'MSH Niacinamide Brightening Moisture Gel', 121000, 'product-image-1.png', 10, TRUE),
+   ('SKINTIFIC', '5X Ceramide Barrier Moisture Gel', 135000, 'product-image-2.jpg', 5, TRUE),
+   ('SKINTIFIC', 'Cover All Perfect Cushion', 180000, 'product-image-3.png', 4, TRUE),
+   ('SKINTIFIC', '5X Ceramide Serum Sunscreen', 52000, 'product-image-4.png', 3, TRUE),
+   ('SKINTIFIC', 'Alaska Volcano Pore Clay Stick', 86000, 'product-image-5.png', 8, TRUE),
+   ('SKINTIFIC', 'REFILL Cover All Perfect Cushion', 133000, 'product-image-6.png', 5, TRUE),
+   ('SKINTIFIC', 'Mugwort Acne Clay Stick', 87000, 'product-image-7.png', 3, TRUE),
+   ('SKINTIFIC', 'Truffle Biome Skin Reborn Cream Gel Moisturizer', 148000, 'product-image-8.png', 2, TRUE),
+   ('COSRX', 'Salicylic Acid Daily Gentle Cleanser', 116000, 'product-image-9.jpg', 17, TRUE),
+   ('COSRX', 'Hyaluronic Acid Intensive Cream', 224000, 'product-image-10.jpg', 6, TRUE),
+   ('COSRX', 'Advanced Snail Mucin 96 Power Essence', 206000, 'product-image-11.jpg', 4, TRUE),
+   ('COSRX', 'AHA/BHA Clarifying Treatment Toner', 150000, 'product-image-12.jpg', 13, TRUE),
+   ('AZARINE', 'Skinfit Essence Toner', 40000, 'product-image-13.png', 6, TRUE),
+   ('AZARINE', 'Bodyguard Moisturiser Sunscreen Serum Magical Luv', 65000, 'product-image-14.png', 7, TRUE),
+   ('AZARINE', 'Bodyguard Moisturiser Sunscreen Serum Sun O Clock', 65000, 'product-image-15.png', 3, TRUE),
+   ('AZARINE', 'Vitamin Lab Instant Glow Peel Off Nail Polish', 35000, 'product-image-16.png', 23, TRUE)
+
 7. **Start the Application**
    ```bash
    npm run start
