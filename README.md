@@ -97,7 +97,7 @@ To set up the Lumina website on your local machine, follow these steps:
    2. Admin Dashboard: http://localhost:3000/admin
 
 ## Product Management Guideline
-### :heavy_plus_sign: Add Product
+### :new: Add Product
 1. Access the admin dashboard
 2. Click the "Add New" icon button at the top right corner
 3. Add the products' Brand Name, Product Name, Stock Amount, Price, and Image File Name
@@ -111,13 +111,13 @@ To set up the Lumina website on your local machine, follow these steps:
 1. Access The Admin Dashboard
 2. Click the Toggle button (Green/Gray) in the 'Modify' column of the product rows you want to toggle.
 
-### :pencil: Edit Product
+### :pencil2: Edit Product
 1. Access the Admin Dashboard
 2. Click the Edit icon (Blue color) in the 'Modify' column of the product rows you want to edit.
 3. Modify and adjust the datas as you want
 4. Click "Save Changes"
 
-### :heavy_minus_sign: Delete Product
+### :x: Delete Product
 1. Access the Admin Dashboard
 2. Click the Delete icon (Red color) in the 'Modify' column of the product rows you want to delete.
 3. Click confirmation button "Delete"
