@@ -1,9 +1,9 @@
-// /server/src/routes/routes.login.js
+// Currently unused
 
-var express = require('express')
-var router = express.Router()
+// var express = require('express')
+// var router = express.Router()
 
-// Route to access /login
-router.get('/', (req, res) => res.render('login'))
+// // Route to access /login
+// router.get('/', (req, res) => res.render('login'))
 
-module.exports = router
+// module.exports = router
