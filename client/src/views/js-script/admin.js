@@ -45,6 +45,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       return
     }
 
+    const confirmDelete = confirm(
+      'Are you sure you want to delete this product?',
+    )
+    if (!confirmDelete) {
+      return
+    }
+
     try {
       const response = await fetch(`/api/admin/products/${productId}`, {
         method: 'DELETE',
