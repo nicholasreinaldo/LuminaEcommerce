@@ -1,5 +1,3 @@
-// /index.js
-
 const express = require('express')
 const app = express()
 const path = require('path')
@@ -10,11 +8,12 @@ const indexRouter = require('./server/src/routes/routes.index')
 const adminRouter = require('./server/src/routes/routes.admin')
 const productsRouter = require('./server/src/routes/routes.products')
 
-app.set('view engine', 'ejs')
-app.use(express.static(path.join(__dirname, 'client')))
-app.set('views', path.join(__dirname, 'client/src/views'))
+// Express configurations
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true })) // Set middleware for parsing URL-encoded payloads in HTTP requests.
+app.set('view engine', 'ejs') // Setup EJS view engine
+app.use(express.static(path.join(__dirname, 'client'))) // Set directory for static files
+app.set('views', path.join(__dirname, 'client/src/views')) // set views templates directory
 
 /* Using all routers */
 app.use('/', indexRouter)

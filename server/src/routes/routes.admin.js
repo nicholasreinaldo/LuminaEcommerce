@@ -1,5 +1,3 @@
-// server/src/routes/routes.admin.js
-
 const express = require('express')
 const router = express.Router()
 const knex = require('../../../db')
@@ -14,7 +12,7 @@ router.get('/products', async (req, res) => {
     const products = await knex
       .select('*')
       .from('products')
-      .orderBy('id', 'asc') // Order by 'id' or 'created_at'
+      .orderBy('id', 'asc')
     res.json(products)
   } catch (err) {
     console.error(err)
@@ -37,16 +35,14 @@ router.get('/products/:id', async (req, res) => {
   }
 })
 
-// Route to create a new product
+// Routes for the product management features
+
 router.post('/products', adminController.createProduct)
 
-// Route to delete a product
 router.delete('/products/:id', adminController.deleteProduct)
 
-// Route to update a product
 router.put('/products/:id', adminController.updateProduct)
 
-// Route to update listing status
 router.put('/products/:id/listing-status', adminController.updateListingStatus)
 
 module.exports = router

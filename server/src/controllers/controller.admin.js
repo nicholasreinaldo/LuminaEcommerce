@@ -1,5 +1,7 @@
 const Product = require('../models/model.products')
 
+// Controllers for the product management features
+
 exports.createProduct = async (req, res) => {
   const {
     brand_name,
@@ -63,8 +65,6 @@ exports.updateProduct = async (req, res) => {
 exports.updateListingStatus = async (req, res) => {
   const { id } = req.params
   const { listing_status } = req.body
-
-  // Ensure listing_status is a boolean
   const status = listing_status === 'true' || listing_status === true
 
   try {

@@ -573,7 +573,7 @@ input:not(:checked) + .slider .switch-label.off {
 .notification .close {
   cursor: pointer;
   font-size: 18px;
-  margin-left: 15px; /* Add some gap between the text and the close button */
+  margin-left: 15px;
 }
 
 .notification .message {
@@ -679,8 +679,16 @@ input:not(:checked) + .slider .switch-label.off {
   background-color: #bc241f;
 }
 
+.confirm-btn:hover {
+  background-color: #8c1c18;
+}
+
 .cancel-btn {
   background-color: #a5a5a5;
+}
+
+.cancel-btn:hover {
+  background-color: #707070;
 }
 
 #deleteConfirmationModal p {

@@ -1,16 +1,14 @@
-// /server/src/routes/routes.products.js
-
 const express = require('express')
 const router = express.Router()
 const knex = require('../../../db')
 
-// Route to access all products from database for listing in index
+// Route to access all products from database for listing in index / home page
 router.get('/products', async (req, res) => {
   try {
     const products = await knex
       .select('*')
       .from('products')
-      .orderBy('id', 'asc') // Order by 'id' or 'created_at'
+      .orderBy('id', 'asc')
     res.json(products)
   } catch (err) {
     console.error(err)
