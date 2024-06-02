@@ -10,7 +10,6 @@ This website is designed for Binar Academy Gold Challenge level project which fe
   - [Admin Features](#admin-features)
 - [Installation](#installation)
 - [Admin Guideline](#admin-guideline)
-  - [Admin Login](#admin-login)
   - [Product Management](#product-management)
 - [Feature updates plan](#feature-updates-plan)
 
@@ -35,12 +34,11 @@ To set up the Lumina website on your local machine, follow these steps:
 2. **Install dependencies**
    ```bash
    npm init
-   npm install node
-   node index.js
-   npm install  ejs express knex pg
+   npm install node ejs express knex pg
    npm install -D nodemon
+   node index.js
    ```
-3. **Setup the database**
+3. **Connect the database**
    </br>As this project does not initialize knex and use knex migrations and seeds, we will manually setup the database on PostgreSQL.
    </br>Make sure your database connection  details and replace the content of root/knexfile.js according to your database credentials.
    
@@ -52,7 +50,11 @@ To set up the Lumina website on your local machine, follow these steps:
      user: 'postgres',
      password: 'your-database-password',
    }
-5. **Start the Application**
+4. **
+   </br> This query is to 
+   ```
+   
+6. **Start the Application**
    ```bash
    npm run start
    ```
